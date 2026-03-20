@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>NGO SaaS Platform Case Study | Emergexians Infotech Pvt. Ltd.</title>
+<meta name="title" content="NGO SaaS Platform Case Study | Emergexians Infotech Pvt. Ltd." />
+<meta name="description" content="Discover how Emergexians built an NGO SaaS platform with subscription plans, campaign management, donation flow, onboarding, and recurring fundraising architecture." />
+<meta name="keywords" content="NGO SaaS platform, donation platform development, fundraising software, NGO CRM, recurring donation system, Razorpay donation integration, campaign management platform, custom SaaS development, Emergexians case study" />
+<meta name="author" content="Emergexians Infotech Pvt. Ltd." />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="English" />
+<meta name="revisit-after" content="7 days" />
+<meta name="distribution" content="global" />
+<meta name="rating" content="general" />
+<link rel="canonical" href="https://www.emergexians.com/ngo-saas-case-study.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="NGO SaaS Platform Case Study | Emergexians" />
+<meta property="og:description" content="A fundraising SaaS platform by Emergexians with subscriptions, campaign creation, donations, and NGO onboarding workflows." />
+<meta property="og:url" content="https://www.emergexians.com/ngo-saas-case-study.html" />
+<meta property="og:site_name" content="Emergexians" />
+<meta property="og:image" content="https://www.emergexians.com/assets/images/og/ngo-saas.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="NGO SaaS Platform Case Study - Emergexians" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="NGO SaaS Platform Case Study | Emergexians" />
+<meta name="twitter:description" content="Explore Emergexians NGO SaaS platform featuring plans, campaigns, donation flow, and recurring fundraising architecture." />
+<meta name="twitter:image" content="https://www.emergexians.com/assets/images/og/ngo-saas.png" />
+<meta name="theme-color" content="#6083be" />
+<link rel="icon" href="../assets/images/favicon/favicon.png" type="image/png" />
+<link rel="apple-touch-icon" href="https://www.emergexians.com/assets/images/favicon/favicon.png" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/css/libraries.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "NGO SaaS Platform Case Study",
+  "description": "Case study of an NGO SaaS platform built by Emergexians with subscriptions, campaign management, donations, and onboarding workflows.",
+  "author": {
+    "@type": "Organization",
+    "name": "Emergexians Infotech Pvt. Ltd."
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Emergexians Infotech Pvt. Ltd.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.emergexians.com/assets/images/logo/logo-dark.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.emergexians.com/ngo-saas-case-study.html"
+  },
+  "image": "https://www.emergexians.com/assets/images/og/ngo-saas.png",
+  "datePublished": "2026-03-18",
+  "dateModified": "2026-03-18"
+}
+</script>
+
+
+  <style>
+    :root {
+      --primary: #6083be;
+      --primary-dark: #45679f;
+      --secondary: #0f172a;
+      --accent: #eef4ff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --white: #ffffff;
+      --border: rgba(96, 131, 190, 0.16);
+      --shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+      --radius: 22px;
+    }
+
+    .section-padding {
+      padding: 100px 0;
+    }
+
+    .hero-section {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #0f172a 0%, #173456 40%, #6083be 100%);
+      color: #fff;
+      padding: 80px 0 110px;
+    }
+
+    .hero-section::before,
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.06);
+      filter: blur(10px);
+    }
+
+    .hero-section::before {
+      width: 360px;
+      height: 360px;
+      top: -140px;
+      right: -120px;
+    }
+
+    .hero-section::after {
+      width: 260px;
+      height: 260px;
+      left: -80px;
+      bottom: -100px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .hero-text {
+      max-width: 720px;
+      color: rgba(255, 255, 255, 0.88);
+      margin-bottom: 28px;
+      font-size: 1.04rem;
+    }
+
+    .btn-brand {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      padding: 2px 16px;
+      font-weight: 600;
+    }
+
+    .btn-brand:hover {
+      background: var(--primary-dark);
+      color: #fff;
+    }
+
+    .btn-outline-light-custom {
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: #fff;
+      border-radius: 999px;
+      padding: 2px 16px;
+      font-weight: 600;
+    }
+
+    .btn-outline-light-custom:hover {
+      background: #fff;
+      color: var(--secondary);
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-stat h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    .hero-stat p {
+      margin-bottom: 0;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 14px;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .card-box,
+    .feature-card,
+    .metric-card,
+    .tech-card,
+    .showcase-box,
+    .cta-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .card-box {
+      padding: 32px;
+      height: 100%;
+    }
+
+    .feature-card,
+    .tech-card {
+      padding: 26px;
+      height: 100%;
+      transition: 0.3s ease;
+    }
+
+    .feature-card:hover,
+    .tech-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .icon-wrap {
+      width: 58px;
+      height: 58px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: rgba(96, 131, 190, 0.12);
+      color: var(--primary);
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .card-box h4,
+    .feature-card h5,
+    .tech-card h5 {
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+
+    .card-box p,
+    .feature-card p,
+    .tech-card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .metric-card {
+      text-align: center;
+      padding: 30px;
+      height: 100%;
+    }
+
+    .metric-card h3 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .metric-card p {
+      color: var(--muted);
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    .timeline-box {
+      position: relative;
+      padding-left: 28px;
+    }
+
+    .timeline-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 8px;
+      width: 2px;
+      height: 100%;
+      background: rgba(96, 131, 190, 0.25);
+    }
+
+    .timeline-item {
+      position: relative;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 22px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -29px;
+      top: 26px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 4px solid #eaf1fb;
+    }
+
+    .timeline-step {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .timeline-item h5 {
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--secondary);
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .showcase-box {
+      padding: 32px;
+    }
+
+    .dashboard-preview {
+      background: linear-gradient(135deg, #eff5fd, #f9fbff);
+      border: 1px dashed rgba(96, 131, 190, 0.35);
+      border-radius: 20px;
+      padding: 35px;
+      min-height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .dashboard-preview i {
+      font-size: 58px;
+      color: var(--primary);
+      margin-bottom: 14px;
+    }
+
+    .dashboard-preview h5 {
+      font-weight: 700;
+      color: var(--secondary);
+      margin-bottom: 10px;
+    }
+
+    .dashboard-preview p {
+      color: var(--muted);
+      margin-bottom: 0;
+      max-width: 500px;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, #0f172a, #1d3557, #6083be);
+    }
+
+    .cta-box {
+      padding: 50px 35px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(12px);
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta-box h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .cta-box p {
+      color: rgba(255, 255, 255, 0.88);
+      max-width: 720px;
+      margin: 0 auto 24px;
+    }
+
+    @media (max-width: 991px) {
+      .hero-title {
+        font-size: 2.4rem;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .section-padding {
+        padding: 60px 0;
+      }
+
+      .hero-section {
+        padding: 90px 0 70px;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.7rem;
+      }
+
+      .hero-card {
+        margin-top: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <div class="preloader">
+      <div class="sk-cube-grid">
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+      </div>
+    </div><!-- /.preloader -->
+    <header class="header header-light header-light-has-topbar">
+      <div class="d-none d-md-block">
+        <div class="topbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <span class="topbar__text">
+                  CIN: U62020DL2024PTC436878   <span style="color: blue;">ISO Certified (ISO 9001:2015, ISO/IEC 27001:2022)</span> G.S.T: 07AAICE4126E1ZX
+                </span>
+              </div><!-- /.col-12 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.topbar -->
+      </div>
+      <nav class="navbar navbar-expand-lg sticky-navbar">
+        <div class="container">
+
+          <a class="navbar-brand" href="index.html">
+            <img src="../assets/images/logo/logo-light.png" class="logo-light" alt="logo">
+            <img src="../assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav__item  has-dropdown">
+                <a href="index.html" data-toggle="dropdown" class="nav__item-link active">Home</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item  has-dropdown">
+                <a href="home-modern.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Company</a>
+                <ul class="dropdown-menu">
+                  <li class="nav__item">
+                    <a href="why-us.html" class="nav__item-link">Why Choose Us</a>
+                  </li><!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="leadership-team.html" class="nav__item-link">Leadership Team</a>
+                  </li><!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="pricing.html" class="nav__item-link">Pricing & Plans</a>
+                  </li><!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
+                  </li> <!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="careers.html" class="nav__item-link">Careers</a>
+                  </li><!-- /.nav-item -->
+                </ul><!-- /.dropdown-menu -->
+              </li><!-- /.nav-item -->
+              <li class="nav__item  has-dropdown">
+                <a href="home-modern.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">IT Solutions</a>
+                <ul class="dropdown-menu">
+                  <li class="nav__item">
+                    <div class="row mx-0">
+                      <div class="col-sm-6 dropdown-menu-col">
+                        <ul class="nav flex-column">
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/website_development.html">Website Development</a>
+                          </li> <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">App Development</a>
+                          </li> <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Software Development</a>
+                          </li> <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">ERPs & CRM</a>
+                          </li> <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT Support</a>
+                          </li>
+                          <!-- /.nav-item -->
+                        </ul>
+                      </div><!-- /.col-sm-6 -->
+                    </div><!-- /.row -->
+                  </li><!-- /.nav-item -->
+                </ul><!-- /.dropdown-menu -->
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="about-us.html" class="nav__item-link">About Us</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="contact-us.html" class="nav__item-link">Contacts</a>
+              </li><!-- /.nav-item -->
+            </ul><!-- /.navbar-nav -->
+          </div><!-- /.navbar-collapse -->
+          <ul class="navbar-actions list-unstyled mb-0 d-flex align-items-center">
+            <li class="d-none d-xl-block">
+              <a href="request-quote.html" class="btn action__btn-contact">Request A Quote</a>
+            </li>
+          </ul><!-- /.navbar-actions -->
+        </div><!-- /.container -->
+      </nav><!-- /.navabr -->
+    </header><!-- /.Header -->
+
+  <section class="hero-section">
+    <div class="container position-relative" style="z-index:2;">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="eyebrow">Case Study • NGO SaaS Platform</span>
+          <h1 class="hero-title">
+            How Emergexians Designed a Subscription-Based NGO Platform for Donations, Campaigns & Recurring Giving
+          </h1>
+          <p class="hero-text">
+            A custom SaaS platform built to help NGOs create campaigns, collect online donations,
+            manage subscriptions, and streamline digital fundraising through a modern and scalable system.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#case-study-details" class="btn btn-brand">Explore Case Study</a>
+            <a href="#contact" class="btn btn-outline-light-custom">Start Your Project</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="hero-card">
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="hero-stat">
+                  <h3>Multi</h3>
+                  <p>NGO onboarding system</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="hero-stat">
+                  <h3>Online</h3>
+                  <p>Donations & payments</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="hero-stat">
+                  <h3>Recurring</h3>
+                  <p>Subscription-ready giving</p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="hero-stat">
+                  <h3>Admin</h3>
+                  <p>Central platform control</p>
+                </div>
+              </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.14);" />
+            <p class="mb-0 text-white-50">
+              Product strategy, UX, and platform engineering by
+              <strong class="text-white">Emergexians</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding" id="case-study-details">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Project Overview</h2>
+        <p class="section-subtitle">
+          The platform was created to help NGOs digitize fundraising operations, launch donation campaigns,
+          manage supporters, and scale recurring contribution models through a single web-based ecosystem.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card-box">
+            <div class="icon-wrap">
+              <i class="bi bi-heart-pulse"></i>
+            </div>
+            <h4>Industry Focus</h4>
+            <p>
+              Social impact organizations, NGOs, fundraising teams, and nonprofit campaigns
+              requiring digital donation and supporter management infrastructure.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card-box">
+            <div class="icon-wrap">
+              <i class="bi bi-exclamation-octagon"></i>
+            </div>
+            <h4>Business Challenge</h4>
+            <p>
+              Many NGOs lack modern digital systems for campaign publishing, monthly giving,
+              donation collection, and centralized administrative control.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card-box">
+            <div class="icon-wrap">
+              <i class="bi bi-stars"></i>
+            </div>
+            <h4>Emergexians Solution</h4>
+            <p>
+              A scalable NGO SaaS platform with pricing plans, campaign management,
+              donation flow, onboarding, admin dashboard, and payment integration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card-box h-100">
+            <div class="icon-wrap">
+              <i class="bi bi-x-circle"></i>
+            </div>
+            <h4>Problem Statement</h4>
+            <p class="mb-3">
+              NGOs often struggle with fragmented donation operations and limited technical infrastructure,
+              which affects fundraising scale, donor retention, and operational transparency.
+            </p>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>No centralized digital fundraising system</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Difficulty managing campaigns and donor data</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Lack of recurring donation automation</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Manual onboarding and administrative overhead</li>
+              <li class="mb-0"><i class="bi bi-check2-circle text-primary me-2"></i>No structured SaaS model for NGO subscriptions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card-box h-100">
+            <div class="icon-wrap">
+              <i class="bi bi-check-circle"></i>
+            </div>
+            <h4>Solution Delivered</h4>
+            <p class="mb-3">
+              Emergexians designed a platform that combines fundraising, subscriptions,
+              onboarding, public campaign visibility, and admin-level governance into one product.
+            </p>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><i class="bi bi-arrow-right-circle text-primary me-2"></i>NGO registration and subscription plans</li>
+              <li class="mb-2"><i class="bi bi-arrow-right-circle text-primary me-2"></i>Campaign creation and public donation pages</li>
+              <li class="mb-2"><i class="bi bi-arrow-right-circle text-primary me-2"></i>Recurring donation-ready architecture</li>
+              <li class="mb-2"><i class="bi bi-arrow-right-circle text-primary me-2"></i>Admin control for plans, NGOs, and approvals</li>
+              <li class="mb-0"><i class="bi bi-arrow-right-circle text-primary me-2"></i>Payment flow integration for digital collections</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Core Features Implemented</h2>
+        <p class="section-subtitle">
+          The product was structured like a real SaaS platform with subscription logic,
+          donor-facing pages, NGO dashboards, and platform administration.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="icon-wrap"><i class="bi bi-grid"></i></div>
+            <h5>Subscription Plans</h5>
+            <p>Multi-plan structure for NGOs with feature-based pricing and platform access control.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="icon-wrap"><i class="bi bi-building-add"></i></div>
+            <h5>NGO Onboarding</h5>
+            <p>Dedicated registration workflow for organizations after successful plan purchase.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="icon-wrap"><i class="bi bi-megaphone"></i></div>
+            <h5>Campaign Management</h5>
+            <p>Create and manage fundraising campaigns with public visibility and donor access.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="icon-wrap"><i class="bi bi-arrow-repeat"></i></div>
+            <h5>Recurring Donations</h5>
+            <p>Architecture designed to support monthly giving and recurring donor contribution flows.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="icon-wrap"><i class="bi bi-credit-card-2-front"></i></div>
+            <h5>Payment Integration</h5>
+            <p>Razorpay-ready donation and subscription payment flow for platform monetization.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="icon-wrap"><i class="bi bi-shield-check"></i></div>
+            <h5>Admin Governance</h5>
+            <p>Super admin panel for approvals, plan management, NGO control, and platform visibility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Execution Approach</h2>
+        <p class="section-subtitle">
+          The platform was approached as a scalable product, not just a website, with separate user journeys for admins, NGOs, and donors.
+        </p>
+      </div>
+
+      <div class="timeline-box">
+        <div class="timeline-item">
+          <span class="timeline-step">Step 01</span>
+          <h5>Product Strategy & Flow Mapping</h5>
+          <p>
+            Defined subscription flow, NGO onboarding process, donor journey, public campaign pages, and platform administration.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-step">Step 02</span>
+          <h5>SaaS Architecture Planning</h5>
+          <p>
+            Structured user roles, plan logic, campaign modules, donation handling, and administrative governance layer.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-step">Step 03</span>
+          <h5>UI & Dashboard Development</h5>
+          <p>
+            Designed responsive interfaces for NGOs, donors, and admins with clarity around subscription, campaigns, and actions.
+          </p>
+        </div>
+
+        <div class="timeline-item mb-0">
+          <span class="timeline-step">Step 04</span>
+          <h5>Payment & Platform Readiness</h5>
+          <p>
+            Integrated monetization-ready flow and prepared the system for live onboarding, plan purchase, and donation processing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Business Impact</h2>
+        <p class="section-subtitle">
+          This platform created a foundation for NGOs to digitize fundraising and for the business to operate a recurring-revenue SaaS product.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="metric-card">
+            <h3>Faster</h3>
+            <p>NGO onboarding and setup flow</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="metric-card">
+            <h3>Better</h3>
+            <p>Campaign publishing and donation visibility</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="metric-card">
+            <h3>Recurring</h3>
+            <p>Revenue model for monthly subscription plans</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="metric-card">
+            <h3>Scalable</h3>
+            <p>Multi-organization product architecture</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Technology Stack</h2>
+        <p class="section-subtitle">
+          Built using dependable web technologies with room for scale, integrations, and future product expansion.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="tech-card">
+            <div class="icon-wrap"><i class="bi bi-code-slash"></i></div>
+            <h5>Frontend</h5>
+            <p>HTML, CSS, Bootstrap, JavaScript</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="tech-card">
+            <div class="icon-wrap"><i class="bi bi-server"></i></div>
+            <h5>Backend</h5>
+            <p>PHP-based application logic and custom workflow handling</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="tech-card">
+            <div class="icon-wrap"><i class="bi bi-database"></i></div>
+            <h5>Database</h5>
+            <p>MySQL for NGOs, plans, campaigns, and donation data structure</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="tech-card">
+            <div class="icon-wrap"><i class="bi bi-cash-coin"></i></div>
+            <h5>Payments</h5>
+            <p>Razorpay-ready subscription and donation collection architecture</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="showcase-box">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <h2 class="section-title mb-3">Project Showcase</h2>
+            <p class="text-muted mb-3">
+              Replace this area with real screenshots of subscription plans page, NGO registration,
+              campaign listing, donation checkout, and admin dashboard.
+            </p>
+            <p class="text-muted mb-0">
+              Real visuals will make this case study more persuasive for NGOs, investors, and enterprise clients.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="dashboard-preview">
+              <i class="bi bi-window-sidebar"></i>
+              <h5>NGO SaaS Platform Preview</h5>
+              <p>
+                Add actual screenshots here for plan purchase flow, campaign page, donor experience, and admin analytics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding cta-section" id="contact">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Planning to Build a SaaS Platform for Your Industry?</h2>
+        <p>
+          Emergexians develops custom platforms for real-world business models including subscriptions,
+          dashboards, automation workflows, digital payments, and scalable admin control systems.
+        </p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a href="#" class="btn btn-brand">Book a Consultation</a>
+          <a href="#" class="btn btn-outline-light-custom">View More Case Studies</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      <!-- Footer Start -->
+  <footer class="emx-footer">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Brand -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <img
+              src="../assets/images/logo/1.png"
+              alt="Emergexians Logo"
+              class="footer-logo"
+              onerror="this.src='https://via.placeholder.com/54x54?text=E';"
+            />
+            <div class="footer-brand-text">
+              <h3>
+                Emergexians 
+                <span style="font-size: 18px; vertical-align: top; opacity: 0.8;">™</span>
+              </h3>
+              <p>Infotech Private Limited</p>
+            </div>
+          </div>
+
+          <p class="footer-about">
+            Emergexians delivers modern website development, mobile apps,
+            custom software, CRM, SaaS, and digital marketing solutions
+            for startups, brands, and growing businesses.
+          </p>
+
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="careers.html">Career</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Services</h5>
+          <ul class="footer-links">
+            <li><a href="#">Website Development</a></li>
+            <li><a href="#">App Development</a></li>
+            <li><a href="#">Software Development</a></li>
+            <li><a href="#">CRM & ERP Solutions</a></li>
+            <li><a href="#">SaaS Development</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contact Info</h5>
+          <ul class="footer-contact">
+            <li>
+              <i class="bi bi-telephone-fill"></i>
+              <span><a href="tel:+919999999999">+91 8601530993</a></span>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill"></i>
+              <span><a href="mailto:info@emergexians.com">info@emergexians.com</a></span>
+            </li>
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Dwarka Sec-14, Delhi, India</span>
+            </li>
+            <li>
+              <i class="bi bi-clock-fill"></i>
+              <span>Mon - Sat : 10:00 AM - 7:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-divider">
+        <div class="row align-items-center footer-bottom-responsive">
+          <div class="col-md-6">
+            <p class="footer-bottom-text mb-0">
+              © <span id="footerYear"></span> Emergexians Infotech Pvt. Ltd. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end footer-bottom-links">
+            <a href="../privacy-policy.html">Privacy Policy</a>
+            <span class="mx-2 text-white-50">|</span>
+            <a href="../terms-and-conditions.html">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+  </div><!-- /.wrapper -->
+
+
+    <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Dynamic year
+    document.getElementById("footerYear").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/plugins.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
