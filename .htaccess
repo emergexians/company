@@ -1,0 +1,70 @@
+RewriteEngine On
+
+# =========================
+# FORCE HTTPS + WWW
+# =========================
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\.emergexians\.com$ [NC]
+RewriteRule ^(.*)$ https://www.emergexians.com/$1 [L,R=301]
+
+# =========================
+# DEFAULT FILE
+# =========================
+DirectoryIndex index.html
+
+# =========================
+# REMOVE .HTML EXTENSION
+# Example: /about-us instead of /about-us.html
+# =========================
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/.]+)/?$ $1.html [L]
+
+# =========================
+# DISABLE DIRECTORY LISTING
+# =========================
+Options -Indexes
+
+# =========================
+# CUSTOM ERROR PAGE
+# =========================
+ErrorDocument 404 /404.html
+
+# =========================
+# GZIP COMPRESSION
+# =========================
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# =========================
+# BROWSER CACHING
+# =========================
+<IfModule mod_expires.c>
+ExpiresActive On
+
+# Images
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/webp "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+
+# CSS & JS
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+
+# HTML
+ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# =========================
+# SECURITY HEADERS
+# =========================
+<IfModule mod_headers.c>
+Header set X-Content-Type-Options "nosniff"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
