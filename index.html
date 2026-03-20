@@ -195,7 +195,6 @@ IT company for startups, ERP solutions India, software company Delhi NCR
             </ul><!-- /.navbar-nav -->
           </div><!-- /.navbar-collapse -->
           <ul class="navbar-actions list-unstyled mb-0 d-flex align-items-center">
-            <li><button class="action__btn action__btn-search"><i class="icon-search"></i></button></li>
             <li class="d-none d-xl-block">
               <a href="request-quote.html" class="btn action__btn-contact">Request A Quote</a>
             </li>
@@ -449,20 +448,6 @@ IT company for startups, ERP solutions India, software company Delhi NCR
                   </a>
                 </div><!-- /.service-content -->
               </div><!-- /.service-item -->
-              <!-- service item #5 -->
-              <div class="service-item">
-                <div class="service__content">
-                  <div class="service__icon">
-                    <i class="icon-service"></i>
-                  </div><!-- /.service__icon -->
-                  <h4 class="service__title">SaaS Development<br> Services</h4>
-                  <p class="service__desc">Launch and scale your SaaS product with robust, cloud-based solutions built for performance, security, and long-term growth.</p>
-                  <a href="it-solutions-single.html" class="btn btn__secondary">
-                    <span>Read More</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
-                </div><!-- /.service-content -->
-              </div><!-- /.service-item -->
               <!-- service item #6 -->
               <div class="service-item">
                 <div class="service__content">
@@ -557,7 +542,7 @@ IT company for startups, ERP solutions India, software company Delhi NCR
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 fancybox-light">
             <div class="heading heading-light mb-60">
               <h3 class="heading__title mb-30">Keep business safe & ensure high availability.</h3>
-              <p class="heading__desc">As one of the world's largest ITService Providers, our deep pool of certified
+              <p class="heading__desc">As one of the India's largest ITService Providers, our deep pool of certified
                 engineers and IT staff are ready to help you to keep your IT business safe & ensure high availability.
               </p>
             </div><!-- /.heading -->
@@ -1134,7 +1119,7 @@ IT company for startups, ERP solutions India, software company Delhi NCR
             <div class="footer-brand-text">
               <h3>
                 Emergexians 
-                <span style="font-size: 18px; vertical-align: super; margin-left: 2px; color: azure;">™</span>
+                <span style="font-size: 18px; vertical-align: top; opacity: 0.8;">™</span>
               </h3>
               <p>Infotech Private Limited</p>
             </div>
@@ -1162,7 +1147,7 @@ IT company for startups, ERP solutions India, software company Delhi NCR
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="careers.html">Career</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
@@ -1300,28 +1285,6 @@ IT company for startups, ERP solutions India, software company Delhi NCR
   <script>
     // Dynamic year
     document.getElementById("footerYear").textContent = new Date().getFullYear();
-
-    // Newsletter demo JS
-    const newsletterForm = document.getElementById("newsletterForm");
-    const newsletterEmail = document.getElementById("newsletterEmail");
-    const footerMessage = document.getElementById("footerMessage");
-
-    newsletterForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const email = newsletterEmail.value.trim();
-      const validEmail = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
-
-      if (!validEmail.test(email)) {
-        footerMessage.style.display = "block";
-        footerMessage.textContent = "Please enter a valid email address.";
-        return;
-      }
-
-      footerMessage.style.display = "block";
-      footerMessage.textContent = "Thank you for subscribing.";
-      newsletterForm.reset();
-    });
   </script>
 
   <script src="assets/js/jquery-3.5.1.min.js"></script>
