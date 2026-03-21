@@ -97,7 +97,20 @@
     <!-- =========================
         Header 
     =========================== -->
-    <header class="header header-transparent">
+    <header class="header header-light header-light-has-topbar">
+      <div class="d-none d-md-block">
+        <div class="topbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <span class="topbar__text">
+                  CIN: U62020DL2024PTC436878   <span style="color: blue;">ISO Certified (ISO 9001:2015, ISO/IEC 27001:2022)</span> G.S.T: 07AAICE4126E1ZX
+                </span>
+              </div><!-- /.col-12 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.topbar -->
+      </div>
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container">
 
@@ -174,90 +187,6 @@
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
 
-    <!-- ========================
-       page title 
-    =========================== -->
-    <section class="page-title page-title-layout12 text-center bg-overlay bg-overlay-gradient bg-parallax">
-      <div class="bg-img"><img src="assets/images/page-titles/13.jpg" alt="background"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-3">
-            <h1 class="pagetitle__heading">Request A Quote</h1>
-            <p class="pagetitle__desc">As one of the India's ITService Providers, our deep pool of certified
-              engineers and IT staff are ready to help you to keep your IT business safe & ensure high availability.
-            </p>
-            <a class="video__btn video__btn-rounded video__btn-white popup-video"
-              href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-              <div class="video__player">
-                <i class="fa fa-play"></i>
-              </div>
-            </a>
-          </div><!-- /.col-xl-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.page-title -->
-
-
-    <!-- ========================
-      About Layout 1
-    =========================== -->
-    <section class="about-layout1">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="heading mb-30">
-              <div class="d-flex align-items-center mb-20">
-                <div class="divider divider-primary mr-30"></div>
-                <h2 class="heading__subtitle mb-0">Timely Service Delivery & Incident Resolutions!! </h2>
-              </div>
-              <h3 class="heading__title mb-40">Manages service delivery across various business like, HR, Legal and
-                other IT departments!!
-              </h3>
-            </div><!-- /heading -->
-            <div class="position-relative offset-xl-1">
-              <i class="icon-quote"></i>
-              <p class="mb-30">Emergexians has been helping organizations throughout the India to manage
-                their IT with our unique approach to technology management and consultancy solutions with appropriate
-                view and permissions to requests, problems, changes, contracts, assets..</p>
-              <p class="mb-30">You need information security services to proactively prevent and protect confidential
-                data, as well as detect internal and external threats. Protect your business by choosing managed
-                security service provider. Our security services can help ensure your business Trusted by the world's
-                best organizations.</p>
-              <p class="mb-30">For 03+ years and running, it has been delivering smiles to hundreds of IT advisors,
-                developers, users, and business owners. Easy solutions for all difficult IT problems to ensure high
-                availability.</p>
-              <p class="mb-30">Provide users with appropriate view and access permissions to requests, problems,
-                changes, contracts, assets, solutions, and reports with our experienced professionals. </p>
-              <ul class="list-items list-items-layout2 list-unstyled d-flex flex-wrap list-horizontal mb-50">
-                <li>Eliminate Repeat Entry</li>
-                <li>Simplify Communication</li>
-                <li>Drive Business Process</li>
-                <li>Speed Up Transactions</li>
-                <li>Structure Data & Docs</li>
-                <li>Automate Workflows</li>
-              </ul>
-              <img src="assets/images/about/singnture.png" alt="singnture">
-            </div>
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-1">
-            <div class="about__img mb-40">
-              <img src="assets/images/about/1.png" alt="about">
-              <blockquote class="blockquote d-flex align-items-end mb-0">
-                <div class="blockquote__avatar">
-                  <img src="assets/images/testimonials/thumbs/1.png" alt="thumb">
-                </div>
-                <div class="blockquote__content">
-                  <h4 class="blockquote__title mb-0">As one of the india's ITService Providers with over 08+
-                    engineers and IT support staff are ready to help.
-                  </h4>
-                </div><!-- /.blockquote__content -->
-              </blockquote><!-- /.blockquote -->
-            </div><!-- /.about-img -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.About Layout 1 -->
-
     <!-- =========================
        Banner layout 2
       =========================== -->
@@ -265,6 +194,59 @@
       <div class="bg-img"><img src="assets/images/banners/8.jpg" alt="background"></div>
       <div class="container-fluid">
         <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="contact-panel">
+              <form class="contact-panel__form" method="post" action="#" id="contactForm">
+                <div class="row">
+                  <div class="col-12">
+                    <h4 class="contact-panel__title mb-20">Request A Quote</h4>
+                    <p class="contact-panel__desc mb-30">Our deep pool of certified engineers and IT staff are ready
+                      to
+                      help you to keep your IT business safe & ensure high availability.</p>
+                  </div> <!-- /.col-12 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
+                        required>
+                    </div>
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email" id="contact-email"
+                        name="contact-email" required>
+                    </div>
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option value="0">Inquiry</option>
+                        <option value="1">IT Management Services 2</option>
+                        <option value="2">IT Management Services 3</option>
+                      </select>
+                    </div>
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Phone" id="contact-Phone"
+                        name="contact-phone">
+                    </div>
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea class="form-control" placeholder="Additional Details!" id="contact-message"
+                        name="contact-message"></textarea>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center mb-20">
+                      <input type="checkbox" class="custom-control-input" id="acceptTerms">
+                      <label class="custom-control-label" for="acceptTerms">I accept the privacy and terms.</label>
+                    </div>
+                    <button type="submit" class="btn btn__primary btn__xl btn__block">Submit Request </button>
+                    <div class="contact-result"></div>
+                  </div><!-- /.col-12 -->
+                </div><!-- /.row -->
+              </form>
+            </div>
+          </div><!-- /.col-xl-6 -->
           <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-inner">
             <div class="heading heading-light">
               <h3 class="heading__title mb-30">Satisfied Users Over The Globe</h3>
@@ -358,59 +340,6 @@
                   <img src="assets/images/clients/7.png" alt="client">
                 </div><!-- /.client -->
               </div><!-- /.carousel -->
-            </div>
-          </div><!-- /.col-xl-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            <div class="contact-panel">
-              <form class="contact-panel__form" method="post" action="https://7oroof.com/demos/smartdata/assets/php/contact.php" id="contactForm">
-                <div class="row">
-                  <div class="col-12">
-                    <h4 class="contact-panel__title mb-20">Request A Quote</h4>
-                    <p class="contact-panel__desc mb-30">Our deep pool of certified engineers and IT staff are ready
-                      to
-                      help you to keep your IT business safe & ensure high availability.</p>
-                  </div> <!-- /.col-12 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
-                        required>
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email" id="contact-email"
-                        name="contact-email" required>
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <select class="form-control">
-                        <option value="0">Inquiry</option>
-                        <option value="1">IT Management Services 2</option>
-                        <option value="2">IT Management Services 3</option>
-                      </select>
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Phone" id="contact-Phone"
-                        name="contact-phone">
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-12">
-                    <div class="form-group">
-                      <textarea class="form-control" placeholder="Additional Details!" id="contact-message"
-                        name="contact-message"></textarea>
-                    </div>
-                    <div class="custom-control custom-checkbox d-flex align-items-center mb-20">
-                      <input type="checkbox" class="custom-control-input" id="acceptTerms">
-                      <label class="custom-control-label" for="acceptTerms">I accept the privacy and terms.</label>
-                    </div>
-                    <button type="submit" class="btn btn__primary btn__xl btn__block">Submit Request </button>
-                    <div class="contact-result"></div>
-                  </div><!-- /.col-12 -->
-                </div><!-- /.row -->
-              </form>
             </div>
           </div><!-- /.col-xl-6 -->
         </div><!-- /.row -->
