@@ -66,12 +66,12 @@ body {
 }
 
 ::selection {
-  background-color: #6083be;
+  background-color: #578be4;
   color: #ffffff;
 }
 
 a {
-  color: #6083be;
+  color: #578be4;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
@@ -1079,11 +1079,11 @@ select {
 }
 
 .bg-overlay-primary:before {
-  background-color: rgba(104, 155, 231, 0.9);
+  background-color: rgba(51, 127, 241, 0.9);
 }
 
 .bg-overlay-primary-2:before {
-  background-color: rgba(104, 155, 231, 0.9);
+  background-color: rgba(51, 127, 241, 0.9);
 }
 
 /*-------------------------
@@ -1095,7 +1095,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #6083be;
+  color: #337bf8;
   font-family: "Barlow", sans-serif;
   text-transform: capitalize;
   font-weight: 700;
