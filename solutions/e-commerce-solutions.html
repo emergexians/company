@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Solutions | Emergexians</title>
+
+  <meta name="description" content="Emergexians offers premium e-commerce solutions including online store development, custom shopping websites, marketplace platforms, payment gateway integration, inventory management, and scalable digital commerce systems." />
+  <meta name="keywords" content="ecommerce development, e-commerce solutions, online store development, shopping website development, marketplace development, payment gateway integration, ecommerce company, Emergexians" />
+  <meta name="author" content="Emergexians" />
+
+  <meta property="og:title" content="E-Commerce Solutions | Emergexians" />
+  <meta property="og:description" content="Build powerful, stylish, and scalable e-commerce platforms with Emergexians." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="../assets/images/favicon/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="https://www.emergexians.com/assets/images/favicon/favicon.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/libraries.css">
+  <link rel="stylesheet" href="../assets/css/style.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #6083be;
+      --primary-dark: #31558f;
+      --primary-light: #eaf1ff;
+      --dark: #337bf8;
+      --dark-2: #337bf8;
+      --text: #475569;
+      --white: #ffffff;
+      --border: rgba(255,255,255,0.15);
+      --shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background: #f8fbff;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .section-padding {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .section-subtitle {
+      max-width: 720px;
+      margin: 0 auto;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .hero-section {
+      position: relative;
+      padding: 120px 0 90px;
+      background:
+        radial-gradient(circle at top left, rgba(96,131,190,0.20), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(49,85,143,0.18), transparent 35%),
+        linear-gradient(135deg, #071120 0%, #12233f 45%, #6083be 100%);
+      overflow: hidden;
+    }
+
+    .hero-section::before,
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 0;
+    }
+
+    .hero-section::before {
+      width: 280px;
+      height: 280px;
+      background: rgba(255,255,255,0.12);
+      top: -60px;
+      left: -80px;
+    }
+
+    .hero-section::after {
+      width: 320px;
+      height: 320px;
+      background: rgba(96,131,190,0.18);
+      right: -80px;
+      bottom: -100px;
+    }
+
+    .hero-content,
+    .hero-visual {
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.16);
+      color: #fff;
+      font-size: 0.9rem;
+      margin-bottom: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-title {
+      font-size: 3.7rem;
+      line-height: 1.05;
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      color: #dbeafe;
+    }
+
+    .hero-text {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.06rem;
+      line-height: 1.9;
+      max-width: 650px;
+      margin-bottom: 32px;
+    }
+
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .btn-main {
+      background: #fff;
+      color: var(--primary-dark);
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: 0.3s ease;
+      box-shadow: 0 10px 30px rgba(255,255,255,0.12);
+    }
+
+    .btn-main:hover {
+      transform: translateY(-2px);
+      background: #f8fbff;
+      color: var(--primary-dark);
+    }
+
+    .btn-outline-light-custom {
+      padding: 13px 24px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.24);
+      color: #fff;
+      font-weight: 600;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.05);
+      transition: 0.3s ease;
+    }
+
+    .btn-outline-light-custom:hover {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .hero-stat {
+      color: #fff;
+    }
+
+    .hero-stat h4 {
+      color: #fff;
+      margin-bottom: 4px;
+      font-size: 1.8rem;
+    }
+
+    .hero-stat p {
+      margin: 0;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.95rem;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 28px;
+      padding: 24px;
+      backdrop-filter: blur(16px);
+      box-shadow: var(--shadow);
+      color: #fff;
+    }
+
+    .hero-mini-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 20px;
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+
+    .hero-mini-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .hero-mini-card i {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .hero-mini-card h5 {
+      color: #fff;
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+    }
+
+    .hero-mini-card p {
+      margin-bottom: 0;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .about-card,
+    .service-card,
+    .feature-card,
+    .process-card,
+    .tech-card,
+    .cta-box,
+    .commerce-card {
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+    }
+
+    .about-card {
+      padding: 40px;
+      border: 1px solid rgba(96,131,190,0.08);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    }
+
+    .about-badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 8px 14px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+
+    .about-text {
+      color: var(--text);
+      line-height: 1.9;
+      font-size: 1rem;
+    }
+
+    .about-points {
+      margin-top: 25px;
+    }
+
+    .about-points .point {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      color: var(--dark-2);
+      font-weight: 500;
+    }
+
+    .about-points i {
+      color: var(--primary);
+      font-size: 1.1rem;
+      margin-top: 2px;
+    }
+
+    .service-card,
+    .commerce-card {
+      padding: 28px;
+      border: 1px solid rgba(96,131,190,0.08);
+      height: 100%;
+      transition: 0.35s ease;
+      background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+    }
+
+    .service-card:hover,
+    .commerce-card:hover,
+    .tech-card:hover,
+    .process-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 60px rgba(49, 85, 143, 0.14);
+    }
+
+    .service-icon,
+    .commerce-icon {
+      width: 68px;
+      height: 68px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(96,131,190,0.18), rgba(49,85,143,0.12));
+      color: var(--primary-dark);
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+
+    .service-card h4,
+    .commerce-card h4 {
+      font-size: 1.28rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card p,
+    .commerce-card p {
+      color: var(--text);
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    .feature-wrap {
+      background: linear-gradient(135deg, #0f172a 0%, #203557 100%);
+      border-radius: 30px;
+      padding: 55px 32px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .feature-wrap::before {
+      content: "";
+      position: absolute;
+      inset: auto -80px -80px auto;
+      width: 240px;
+      height: 240px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 50%;
+      filter: blur(20px);
+    }
+
+    .feature-wrap .section-title,
+    .feature-wrap .section-subtitle {
+      color: #fff;
+    }
+
+    .feature-wrap .section-subtitle {
+      color: rgba(255,255,255,0.75);
+    }
+
+    .feature-card {
+      padding: 26px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+      height: 100%;
+    }
+
+    .feature-card i {
+      font-size: 1.6rem;
+      margin-bottom: 14px;
+      display: inline-block;
+      color: #dbeafe;
+    }
+
+    .feature-card h5 {
+      color: #fff;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .feature-card p {
+      color: rgba(255,255,255,0.76);
+      margin-bottom: 0;
+      line-height: 1.75;
+    }
+
+    .process-card {
+      padding: 30px 24px;
+      text-align: center;
+      border: 1px solid rgba(96,131,190,0.08);
+      height: 100%;
+      background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+      transition: 0.3s ease;
+    }
+
+    .process-number {
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.3rem;
+      font-weight: 800;
+      box-shadow: 0 14px 30px rgba(96,131,190,0.25);
+    }
+
+    .process-card p {
+      color: var(--text);
+      margin-bottom: 0;
+      line-height: 1.8;
+    }
+
+    .tech-card {
+      padding: 20px 18px;
+      text-align: center;
+      border: 1px solid rgba(96,131,190,0.08);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      transition: 0.3s ease;
+      font-weight: 700;
+      color: var(--dark-2);
+      height: 100%;
+    }
+
+    .tech-card i {
+      display: block;
+      font-size: 1.7rem;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+
+    .cta-box {
+      padding: 60px 40px;
+      background: linear-gradient(135deg, #0f172a 0%, #274171 50%, #6083be 100%);
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+      top: -60px;
+      right: -40px;
+      filter: blur(10px);
+    }
+
+    .cta-box h2 {
+      color: #fff;
+      font-size: 2.3rem;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.82);
+      max-width: 760px;
+      margin: 0 auto 28px;
+      position: relative;
+      z-index: 2;
+      line-height: 1.9;
+    }
+
+    .cta-actions {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn-cta-light {
+      background: #fff;
+      color: var(--primary-dark);
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .btn-cta-light:hover {
+      color: var(--primary-dark);
+      background: #f4f8ff;
+    }
+
+    .btn-cta-outline {
+      border: 1px solid rgba(255,255,255,0.24);
+      color: #fff;
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-weight: 600;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .btn-cta-outline:hover {
+      color: #fff;
+      background: rgba(255,255,255,0.12);
+    }
+
+    @media (max-width: 991px) {
+      .hero-title {
+        font-size: 2.8rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .section-padding {
+        padding: 80px 0;
+      }
+
+      .hero-visual {
+        margin-top: 40px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero-section {
+        padding: 90px 0 70px;
+      }
+
+      .hero-title {
+        font-size: 2.2rem;
+      }
+
+      .hero-text {
+        font-size: 0.98rem;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .about-card,
+      .cta-box {
+        padding: 30px 22px;
+      }
+
+      .hero-stats {
+        gap: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <div class="wrapper">
+    <div class="preloader">
+      <div class="sk-cube-grid">
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+        <span class="sk-cube"></span>
+      </div>
+    </div><!-- /.preloader -->
+    <header class="header header-light header-light-has-topbar">
+      <div class="d-none d-md-block">
+        <div class="topbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <span class="topbar__text">
+                  <span style="color: #475569;">CIN: U62020DL2024PTC436878</span>   <span style="color: blue;">ISO Certified (ISO 9001:2015, ISO/IEC 27001:2022)</span><span style="color: #475569;"> G.S.T: 07AAICE4126E1ZX</span> 
+                </span>
+              </div><!-- /.col-12 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.topbar -->
+      </div>
+      <nav class="navbar navbar-expand-lg sticky-navbar">
+        <div class="container">
+
+          <a class="navbar-brand" href="index.html">
+            <img src="../assets/images/logo/logo-light.png" class="logo-light" alt="logo">
+            <img src="../assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav__item  has-dropdown">
+                <a href="../" data-toggle="dropdown" class="nav__item-link">Home</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item  has-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Company</a>
+                <ul class="dropdown-menu">
+                  <li class="nav__item">
+                    <a href="../leadership-team.html" class="nav__item-link">Leadership Team</a>
+                  </li><!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="../pricing.html" class="nav__item-link">Pricing & Plans</a>
+                  </li><!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="../faqs.html" class="nav__item-link">Help & FAQs</a>
+                  </li> <!-- /.nav-item -->
+                  <li class="nav__item">
+                    <a href="../careers.html" class="nav__item-link">Careers</a>
+                  </li><!-- /.nav-item -->
+                </ul><!-- /.dropdown-menu -->
+              </li><!-- /.nav-item -->
+              <li class="nav__item  has-dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">IT Solutions</a>
+                <ul class="dropdown-menu">
+                  <li class="nav__item">
+                    <div class="row mx-0">
+                      <div class="col-sm-6 dropdown-menu-col">
+                        <ul class="nav flex-column">
+                          <li class="nav__item"><a class="nav__item-link" href="website-development.html">Website Development Services</a>
+                          </li> <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="mobile-app-development.html">App Development Services</a>
+                          </li> <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="custom-software-development.html">Custom Software Development</a>
+                          </li> <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="e-commerce-solutions.html">E-Commerce Solutions</a>
+                          </li> <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="ai-&-automation-solutions.html">Ai & Automation Solutions</a>
+                          </li> <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="technical-support-&-maintenance.html">Technical Support & Maintenance</a>
+                          </li>
+                          <!-- /.nav-item -->
+                        </ul>
+                      </div><!-- /.col-sm-6 -->
+                    </div><!-- /.row -->
+                  </li><!-- /.nav-item -->
+                </ul><!-- /.dropdown-menu -->
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="../about-us.html" class="nav__item-link">About Us</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="../contact-us.html" class="nav__item-link">Contacts</a>
+              </li><!-- /.nav-item -->
+            </ul><!-- /.navbar-nav -->
+          </div><!-- /.navbar-collapse -->
+          <ul class="navbar-actions list-unstyled mb-0 d-flex align-items-center">
+            <li class="d-none d-xl-block">
+              <a href="../request-quote.html" class="btn action__btn-contact">Request A Quote</a>
+            </li>
+          </ul><!-- /.navbar-actions -->
+        </div><!-- /.container -->
+      </nav><!-- /.navabr -->
+    </header><!-- /.Header -->
+
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 hero-content">
+          <div class="eyebrow">
+            <i class="bi bi-cart-check-fill"></i>
+            Premium E-Commerce Solutions by Emergexians
+          </div>
+          <h1 class="hero-title">Online Stores That <span>Sell Better</span> and Scale Faster</h1>
+          <p class="hero-text">
+            Emergexians builds modern, conversion-focused, and scalable e-commerce solutions for brands,
+            startups, retailers, and enterprises. From stylish product storefronts to custom checkout,
+            payment integration, and inventory-ready systems, we create commerce platforms that drive real growth.
+          </p>
+
+          <div class="hero-btns">
+            <a href="../request-quote.html" class="btn-main">Start Your Store Project</a>
+            <a href="../services.html" class="btn-outline-light-custom">Explore Solutions</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <h4>Store</h4>
+              <p>Modern Shopping Experience</p>
+            </div>
+            <div class="hero-stat">
+              <h4>Secure</h4>
+              <p>Safe Payment Integration</p>
+            </div>
+            <div class="hero-stat">
+              <h4>Scale</h4>
+              <p>Growth-Ready Commerce System</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 hero-visual">
+          <div class="hero-card">
+            <div class="hero-mini-card">
+              <i class="bi bi-bag-heart-fill"></i>
+              <h5>Conversion-Focused Store Design</h5>
+              <p>Premium product pages, strong user flow, and attractive layouts that help turn visitors into buyers.</p>
+            </div>
+            <div class="hero-mini-card">
+              <i class="bi bi-credit-card-2-front-fill"></i>
+              <h5>Checkout & Payment Ready</h5>
+              <p>Secure and smooth checkout experiences with payment gateway integration for easy online transactions.</p>
+            </div>
+            <div class="hero-mini-card">
+              <i class="bi bi-box-seam-fill"></i>
+              <h5>Operationally Smart Commerce</h5>
+              <p>Inventory, order handling, customer flow, and management tools designed to support daily operations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="about-card">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <span class="about-badge">Why Choose Our E-Commerce Solutions</span>
+            <h2 class="section-title text-start mb-3">Stylish Shopping Platforms Built for Sales and Growth</h2>
+            <p class="about-text">
+              At Emergexians, we create e-commerce platforms that are not only visually polished but also
+              strategically structured for performance. We focus on better browsing, smooth cart flow,
+              secure checkout, product visibility, and backend efficiency so your online store supports both
+              customer experience and business operations.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-points">
+              <div class="point"><i class="bi bi-check-circle-fill"></i><span>Modern e-commerce UI with premium product presentation</span></div>
+              <div class="point"><i class="bi bi-check-circle-fill"></i><span>Secure payment gateway and checkout integration</span></div>
+              <div class="point"><i class="bi bi-check-circle-fill"></i><span>Inventory, order, and customer management support</span></div>
+              <div class="point"><i class="bi bi-check-circle-fill"></i><span>Mobile-first design for better shopping on every device</span></div>
+              <div class="point"><i class="bi bi-check-circle-fill"></i><span>Scalable architecture for more products and higher traffic</span></div>
+              <div class="point"><i class="bi bi-check-circle-fill"></i><span>Business-focused build for conversion and repeat sales</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our E-Commerce Services</h2>
+        <p class="section-subtitle">
+          Complete digital commerce solutions for businesses that want a strong online storefront,
+          smooth operations, and better conversion performance.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-shop-window"></i></div>
+            <h4>Online Store Development</h4>
+            <p>Professional e-commerce websites with product catalog, cart flow, secure checkout, and customer-friendly navigation.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+            <h4>Marketplace Development</h4>
+            <p>Multi-vendor and marketplace-ready solutions with product management, seller flow, order tracking, and scalable structure.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-credit-card-fill"></i></div>
+            <h4>Payment Gateway Integration</h4>
+            <p>Secure payment systems that support convenient checkout, smooth transaction handling, and customer trust.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-boxes"></i></div>
+            <h4>Inventory & Order Management</h4>
+            <p>Back-office systems to manage stock, orders, dispatch flow, returns, and day-to-day e-commerce operations efficiently.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-phone-fill"></i></div>
+            <h4>Mobile-Friendly Shopping Experience</h4>
+            <p>Responsive storefronts designed for seamless shopping across smartphones, tablets, and desktop devices.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="service-card">
+            <div class="service-icon"><i class="bi bi-search-heart-fill"></i></div>
+            <h4>SEO-Friendly E-Commerce Setup</h4>
+            <p>Optimized product and category structures that support better discoverability and stronger organic visibility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">E-Commerce Solutions We Build</h2>
+        <p class="section-subtitle">
+          We create commerce systems based on your business size, selling model, customer flow, and growth strategy.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-4">
+          <div class="commerce-card">
+            <div class="commerce-icon"><i class="bi bi-basket2-fill"></i></div>
+            <h4>Single Brand Online Stores</h4>
+            <p>Dedicated shopping websites for direct-to-customer businesses that need strong branding, better UX, and smoother purchasing flow.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="commerce-card">
+            <div class="commerce-icon"><i class="bi bi-shop"></i></div>
+            <h4>Multi-Vendor Marketplaces</h4>
+            <p>Commerce platforms with seller onboarding, vendor product control, order management, and scalable marketplace architecture.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="commerce-card">
+            <div class="commerce-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h4>Growth-Focused Commerce Systems</h4>
+            <p>Online sales platforms designed to support marketing campaigns, product expansion, repeat buyers, and operational scale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="feature-wrap">
+        <div class="text-center mb-5">
+          <h2 class="section-title">What Makes Our E-Commerce Platforms Better</h2>
+          <p class="section-subtitle">
+            We balance premium design, conversion strategy, and backend functionality to create stores that are attractive and practical.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-card">
+              <i class="bi bi-palette-fill"></i>
+              <h5>Premium Storefront Design</h5>
+              <p>Visually appealing layouts that highlight products beautifully and strengthen brand trust instantly.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-card">
+              <i class="bi bi-cart-plus-fill"></i>
+              <h5>Smoother Buying Journey</h5>
+              <p>Clear product browsing, cart flow, and checkout structure that helps reduce friction during purchase.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-card">
+              <i class="bi bi-gear-wide-connected"></i>
+              <h5>Operational Efficiency</h5>
+              <p>Management systems for products, orders, stock, and customers that make running the store easier.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-card">
+              <i class="bi bi-bullseye"></i>
+              <h5>Sales-Oriented Structure</h5>
+              <p>Every commerce platform is planned to improve conversion, retention, and long-term online revenue growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our E-Commerce Development Process</h2>
+        <p class="section-subtitle">
+          A structured workflow that transforms your product-selling idea into a secure, scalable, and customer-friendly online business.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3">
+          <div class="process-card">
+            <div class="process-number">01</div>
+            <h4>Business Discovery</h4>
+            <p>We understand your products, audience, selling model, operational process, and platform goals before planning the store.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="process-card">
+            <div class="process-number">02</div>
+            <h4>Store Design</h4>
+            <p>We create modern layouts, product display structure, checkout flow, and user journeys focused on conversion.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="process-card">
+            <div class="process-number">03</div>
+            <h4>Development</h4>
+            <p>Our team builds the platform with product systems, payment setup, backend controls, and scalable commerce logic.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="process-card">
+            <div class="process-number">04</div>
+            <h4>Launch & Growth Support</h4>
+            <p>After testing, we deploy the store and support ongoing improvements, expansion, and feature enhancements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Technologies We Work With</h2>
+        <p class="section-subtitle">
+          We use trusted technologies and integrations to build secure, modern, and performance-ready e-commerce platforms.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3"><div class="tech-card"><i class="bi bi-filetype-php"></i>PHP</div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="tech-card"><i class="bi bi-filetype-js"></i>JavaScript</div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="tech-card"><i class="bi bi-bootstrap-fill"></i>Bootstrap</div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="tech-card"><i class="bi bi-database-fill"></i>MySQL</div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="tech-card"><i class="bi bi-credit-card-2-front-fill"></i>Payment Integration</div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="tech-card"><i class="bi bi-box-seam-fill"></i>Inventory Systems</div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="tech-card"><i class="bi bi-shop-window"></i>Online Store Management</div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="tech-card"><i class="bi bi-cloud-fill"></i>Hosting & Deployment</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Ready to Build an E-Commerce Platform That Sells Better?</h2>
+        <p>
+          Whether you need a branded online store, marketplace platform, or scalable commerce system,
+          Emergexians can design and develop an e-commerce solution that looks premium, works smoothly,
+          and supports your business growth.
+        </p>
+        <div class="cta-actions">
+          <a href="../contact-us.html" class="btn-cta-light">Get Free Consultation</a>
+          <a href="../about-us.html" class="btn-cta-outline">Know More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Footer Start -->
+  <footer class="emx-footer">
+    <div class="container">
+      <div class="row gy-5">
+
+        <!-- Brand -->
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand">
+            <img
+              src="../assets/images/logo/1.png"
+              alt="Emergexians Logo"
+              class="footer-logo"
+              onerror="this.src='https://via.placeholder.com/54x54?text=E';"
+            />
+            <div class="footer-brand-text">
+              <h3>
+                Emergexians 
+                <span style="font-size: 18px; vertical-align: top; opacity: 0.8;">™</span>
+              </h3>
+              <p>Infotech Private Limited</p>
+            </div>
+          </div>
+
+          <p class="footer-about">
+            Emergexians delivers modern website development, mobile apps,
+            custom software, CRM, SaaS, and digital marketing solutions
+            for startups, brands, and growing businesses.
+          </p>
+
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/1DRNa8HUSx/?mibextid=wwXIfr" aria-label="Facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/emergexians" aria-label="Instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/emergexians/" aria-label="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://youtube.com/@emergexians" aria-label="YouTube" target="_blank"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="../">Home</a></li>
+            <li><a href="../about-us.html">About Us</a></li>
+            <li><a href="../services.html">Services</a></li>
+            <li><a href="../pricing.html">Pricing</a></li>
+            <li><a href="../careers.html">Career</a></li>
+            <li><a href="../contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Services</h5>
+          <ul class="footer-links">
+            <li><a href="../solutions/website-development.html">Website Development Services</a></li>
+            <li><a href="../solutions/mobile app-development.html">App Development Services</a></li>
+            <li><a href="../solutions/custom-software-development.html">Custom Software Development</a></li>
+            <li><a href="../solutions/e-commerce-solutions.html">E-Commerce Solutions</a></li>
+            <li><a href="../solutions/ai-&-automation-solutions.html">Ai & Automation Solutions</a></li>
+            <li><a href="../solutions/technical-support-&-maintenance.html">Technical Support & Maintenance</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contact Info</h5>
+          <ul class="footer-contact">
+            <li>
+              <i class="bi bi-telephone-fill"></i>
+              <span><a href="tel:+918601530993">+91 8601530993</a></span>
+            </li>
+            <li>
+              <i class="bi bi-envelope-fill"></i>
+              <span><a href="mailto:info@emergexians.com">info@emergexians.com</a></span>
+            </li>
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Dwarka Sec-14, Delhi, India</span>
+            </li>
+            <li>
+              <i class="bi bi-clock-fill"></i>
+              <span>Mon - Sat : 10:00 AM - 7:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-divider">
+        <div class="row align-items-center footer-bottom-responsive">
+          <div class="col-md-6">
+            <p class="footer-bottom-text mb-0">
+              © <span id="footerYear"></span> Emergexians Infotech Pvt. Ltd. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end footer-bottom-links">
+            <a href="../privacy-policy.html">Privacy Policy</a>
+            <span class="mx-2 text-white-50">|</span>
+            <a href="../terms-and-conditions.html">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+  </div><!-- /.wrapper -->
+
+
+    <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Dynamic year
+    document.getElementById("footerYear").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/plugins.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
