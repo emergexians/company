@@ -1,23 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Smart Data  IT Solutions &  Services Template">
-  <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>Smart Data IT Solutions & Services Template</title>
+  <title>FAQs | Emergexians - Website, App, Software & IT Solutions</title>
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap">
+  <meta name="description" content="Find answers to frequently asked questions about Emergexians services including website development, mobile app development, software development, e-commerce solutions, AI automation, technical support, pricing, timelines, maintenance, and project process." />
+  <meta name="keywords" content="Emergexians FAQs, website development FAQ, mobile app development FAQ, software development FAQ, ecommerce FAQ, AI automation FAQ, IT company FAQ, technical support FAQ, pricing FAQ" />
+  <meta name="author" content="Emergexians" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.emergexians.com/faqs.html" />
+
+  <meta property="og:title" content="FAQs | Emergexians" />
+  <meta property="og:description" content="Get answers to common questions about Emergexians services, pricing, timelines, support, and digital solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.emergexians.com/faqs.html" />
+  <meta property="og:image" content="https://www.emergexians.com/assets/images/og-image.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FAQs | Emergexians" />
+  <meta name="twitter:description" content="Explore commonly asked questions about Emergexians services and solutions." />
+
+  <link rel="icon" href="assets/images/favicon/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="https://www.emergexians.com/assets/images/favicon/favicon.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
-</head>
 
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What services does Emergexians provide?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Emergexians provides website development, mobile app development, custom software development, e-commerce solutions, AI and automation services, technical support and maintenance, digital solutions, and business technology services."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How much does website development cost at Emergexians?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Website development cost depends on design requirements, number of pages, features, integrations, dynamic functionality, and project complexity. Emergexians offers flexible pricing plans and also custom quotations based on your business needs."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How long does it take to develop a website or software project?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Project timelines depend on scope, design complexity, features, revisions, and integrations. Basic websites usually take less time than custom software, mobile apps, or e-commerce platforms. After requirement analysis, Emergexians shares a project timeline."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Does Emergexians provide mobile app development?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yes, Emergexians provides mobile app development solutions for Android, iOS, and cross-platform apps. These include customer apps, business apps, booking apps, service apps, and custom app solutions."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Does Emergexians offer support and maintenance after project completion?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yes, Emergexians provides technical support and maintenance services after project delivery. This can include bug fixing, updates, monitoring, performance improvement, security support, and long-term maintenance plans."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Can Emergexians build custom software for businesses?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yes, Emergexians develops custom software solutions such as CRM systems, ERP software, admin dashboards, portals, automation tools, and business management platforms tailored to business workflows."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Does Emergexians develop e-commerce websites?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yes, Emergexians develops e-commerce websites and online store solutions with product pages, cart systems, checkout flow, payment gateway integration, and management dashboards."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How can I contact Emergexians for a project or consultation?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"You can contact Emergexians through the contact page, website inquiry form, email, or phone to discuss your project requirements, request a quotation, or book a consultation."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --primary: #6083be;
+      --primary-dark: #31558f;
+      --primary-light: #eaf1ff;
+      --dark: #337bf8;
+      --dark-2: #337bf8;
+      --text: #475569;
+      --white: #ffffff;
+      --border: rgba(255,255,255,0.15);
+      --shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .section-padding {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      font-size: 2.35rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .section-subtitle {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .hero-section {
+      position: relative;
+      padding: 120px 0 90px;
+      background:
+        radial-gradient(circle at top left, rgba(96,131,190,0.20), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(49,85,143,0.18), transparent 35%),
+        linear-gradient(135deg, #071120 0%, #12233f 45%, #6083be 100%);
+      overflow: hidden;
+    }
+
+    .hero-section::before,
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 0;
+    }
+
+    .hero-section::before {
+      width: 280px;
+      height: 280px;
+      background: rgba(255,255,255,0.12);
+      top: -60px;
+      left: -80px;
+    }
+
+    .hero-section::after {
+      width: 320px;
+      height: 320px;
+      background: rgba(96,131,190,0.18);
+      right: -80px;
+      bottom: -100px;
+    }
+
+    .hero-content,
+    .hero-box {
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.16);
+      color: #fff;
+      font-size: 0.9rem;
+      margin-bottom: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      line-height: 1.05;
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      color: #dbeafe;
+    }
+
+    .hero-text {
+      color: rgba(255,255,255,0.84);
+      font-size: 1.06rem;
+      line-height: 1.9;
+      max-width: 650px;
+      margin-bottom: 28px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-tags span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.10);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.14);
+      font-size: 0.92rem;
+    }
+
+    .hero-box {
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 28px;
+      padding: 24px;
+      backdrop-filter: blur(16px);
+      box-shadow: var(--shadow);
+      color: #fff;
+    }
+
+    .hero-mini-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .hero-mini-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .hero-mini-card i {
+      font-size: 1.45rem;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .hero-mini-card h5 {
+      color: #fff;
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+    }
+
+    .hero-mini-card p {
+      color: rgba(255,255,255,0.78);
+      margin: 0;
+      line-height: 1.7;
+      font-size: 0.94rem;
+    }
+
+    .content-card,
+    .faq-wrapper,
+    .seo-box,
+    .cta-box {
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.86);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+    }
+
+    .content-card,
+    .seo-box {
+      padding: 34px;
+      border: 1px solid rgba(96,131,190,0.08);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      height: 100%;
+    }
+
+    .content-card p,
+    .seo-box p {
+      color: var(--text);
+      line-height: 1.85;
+      margin-bottom: 0;
+    }
+
+    .content-card ul {
+      padding-left: 18px;
+      margin: 18px 0 0;
+      color: var(--text);
+    }
+
+    .content-card ul li {
+      margin-bottom: 10px;
+      line-height: 1.75;
+    }
+
+    .faq-wrapper {
+      padding: 34px;
+      border: 1px solid rgba(96,131,190,0.08);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    }
+
+    .accordion-item {
+      border: 1px solid rgba(96,131,190,0.10) !important;
+      border-radius: 16px !important;
+      overflow: hidden;
+      margin-bottom: 16px;
+      box-shadow: none !important;
+      background: #fff;
+    }
+
+    .accordion-button {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--dark);
+      padding: 20px 22px;
+      background: #fff;
+      box-shadow: none !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: var(--primary-dark);
+      background: #f5f9ff;
+    }
+
+    .accordion-button:focus {
+      box-shadow: none !important;
+      border: none;
+    }
+
+    .accordion-body {
+      color: var(--text);
+      line-height: 1.9;
+      padding: 0 22px 20px;
+      background: #fff;
+    }
+
+    .seo-box i {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(96,131,190,0.18), rgba(49,85,143,0.12));
+      color: var(--primary-dark);
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+    }
+
+    .cta-box {
+      padding: 60px 40px;
+      background: linear-gradient(135deg, #0f172a 0%, #274171 50%, #6083be 100%);
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+      top: -70px;
+      right: -50px;
+      filter: blur(10px);
+    }
+
+    .cta-box h2 {
+      color: #fff;
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.82);
+      max-width: 760px;
+      margin: 0 auto 26px;
+      position: relative;
+      z-index: 2;
+      line-height: 1.9;
+    }
+
+    .cta-actions {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn-cta-light,
+    .btn-cta-outline {
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .btn-cta-light {
+      background: #fff;
+      color: var(--primary-dark);
+    }
+
+    .btn-cta-light:hover {
+      color: var(--primary-dark);
+      background: #f4f8ff;
+    }
+
+    .btn-cta-outline {
+      border: 1px solid rgba(255,255,255,0.24);
+      color: #fff;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .btn-cta-outline:hover {
+      color: #fff;
+      background: rgba(255,255,255,0.12);
+    }
+
+    @media (max-width: 991px) {
+      .hero-title {
+        font-size: 2.7rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .section-padding {
+        padding: 80px 0;
+      }
+
+      .hero-box {
+        margin-top: 24px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero-section {
+        padding: 90px 0 70px;
+      }
+
+      .hero-title {
+        font-size: 2.15rem;
+      }
+
+      .hero-text {
+        font-size: 0.98rem;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .faq-wrapper,
+      .content-card,
+      .seo-box,
+      .cta-box {
+        padding: 26px 18px;
+      }
+    }
+  </style>
+</head>
 <body>
-  <div class="wrapper">
+
+
+      <div class="wrapper">
     <div class="preloader">
       <div class="sk-cube-grid">
         <span class="sk-cube"></span>
@@ -35,7 +514,20 @@
     <!-- =========================
         Header 
     =========================== -->
-    <header class="header header-transparent">
+    <header class="header header-light header-light-has-topbar">
+      <div class="d-none d-md-block">
+        <div class="topbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <span class="topbar__text">
+                  CIN: U62020DL2024PTC436878   <span style="color: blue;">ISO Certified (ISO 9001:2015, ISO/IEC 27001:2022)</span> G.S.T: 07AAICE4126E1ZX
+                </span>
+              </div><!-- /.col-12 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.topbar -->
+      </div>
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container">
 
@@ -49,33 +541,13 @@
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
               <li class="nav__item  has-dropdown">
-                <a href="index.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Home</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="index.html" class="nav__item-link">Home Main</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-modern.html" class="nav__item-link">Home Modern</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-classic.html" class="nav__item-link">Home Classic</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
+                <a href="./" data-toggle="dropdown" class="nav__item-link">Home</a>
               </li><!-- /.nav-item -->
               <li class="nav__item  has-dropdown">
-                <a href="faqs.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Company</a>
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Company</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
-                    <a href="about-us.html" class="nav__item-link">About Us</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="why-us.html" class="nav__item-link">Why Choose Us</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
                     <a href="leadership-team.html" class="nav__item-link">Leadership Team</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="awards.html" class="nav__item-link">Award & Recognition</a>
                   </li><!-- /.nav-item -->
                   <li class="nav__item">
                     <a href="pricing.html" class="nav__item-link">Pricing & Plans</a>
@@ -89,53 +561,23 @@
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
               <li class="nav__item  has-dropdown">
-                <a href="faqs.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">IT Solutions</a>
-                <ul class="dropdown-menu wide-dropdown-menu">
+                <a href="it-solutions.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link">IT Solutions</a>
+                <ul class="dropdown-menu">
                   <li class="nav__item">
                     <div class="row mx-0">
                       <div class="col-sm-6 dropdown-menu-col">
-                        <a href="it-solutions.html" class="nav__item-link dropdown-menu-title">IT Solutions</a>
                         <ul class="nav flex-column">
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT
-                              Management</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/website-development.html">Website Development Services</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Cyber
-                              Security</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/mobile-app-development.html">App Development Services</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Cloud
-                              Computing</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/custom-software-development.html">Custom Software Development</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT
-                              Consulting</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/e-commerce-solutions.html">E-Commerce Solutions</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Software
-                              Dev</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/ai-&-automation-solutions.html">Ai & Automation Solutions</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT Support</a>
-                          </li>
-                          <!-- /.nav-item -->
-                        </ul>
-                      </div><!-- /.col-sm-6 -->
-                      <div class="col-sm-6 dropdown-menu-col">
-                        <a href="industries.html" class="nav__item-link dropdown-menu-title">Industries</a>
-                        <ul class="nav flex-column">
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Education,
-                              Non-Profit</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Accounting,
-                              Finance</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Government &
-                              Public</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Energy
-                              &
-                              Utilities</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Legal,
-                              Law
-                              Firms</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Manufacturing</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/technical-support-&-maintenance.html">Technical Support & Maintenance</a>
                           </li>
                           <!-- /.nav-item -->
                         </ul>
@@ -144,45 +586,8 @@
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
-                <a href="faqs.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">News&Media</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="blog.html" class="nav__item-link">Our Blog</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-grid.html" class="nav__item-link">Case Studies Grid</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-carousel.html" class="nav__item-link">Case Studies Carousel</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-classic.html" class="nav__item-link">Case Studies Classic</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-single.html" class="nav__item-link">Single Case Study</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
-                <a href="faqs.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Features</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="coming-soon.html" class="nav__item-link">Coming Soon</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="404.html" class="nav__item-link">404 Page</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="faqs.html#" class="nav__item-link  open-register-popup">Register</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="faqs.html#" class="nav__item-link  open-login-popup">Login</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
+              <li class="nav__item">
+                <a href="about-us.html" class="nav__item-link">About Us</a>
               </li><!-- /.nav-item -->
               <li class="nav__item">
                 <a href="contact-us.html" class="nav__item-link">Contacts</a>
@@ -193,313 +598,287 @@
             <li class="d-none d-xl-block">
               <a href="request-quote.html" class="btn action__btn-contact">Request A Quote</a>
             </li>
-            <li>
-              <button class="action__btn action__btn-login open-login-popup">
-                <i class="icon-user"></i><span>Login</span>
-              </button>
-            </li>
           </ul><!-- /.navbar-actions -->
         </div><!-- /.container -->
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
 
-    <!-- ========================
-       page title 
-    =========================== -->
-    <section class="page-title page-title-layout6 text-center bg-overlay bg-overlay-gradient bg-parallax">
-      <div class="bg-img"><img src="assets/images/page-titles/6.jpg" alt="background"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="pagetitle__heading mb-0">FAQs</h1>
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.page-title -->
-
-    <!-- ========================
-      Secondary Nav
-    =========================== -->
-    <section class="secondary-nav sticky-top py-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="nav nav-tabs justify-content-center">
-              <a href="about-us.html" class="nav__link">About Us</a>
-              <a href="why-us.html" class="nav__link">Why Choose Us</a>
-              <a href="leadership-team.html" class="nav__link">Leadership Team</a>
-              <a href="awards.html" class="nav__link">Awards & Recognition</a>
-              <a href="pricing.html" class="nav__link">Pricing & Plans</a>
-              <a href="faqs.html" class="nav__link active">Help & FAQs</a>
-              <a href="careers.html" class="nav__link">Careers</a>
-            </nav>
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Secondary Nav -->
-
-    <!-- ======================
-       FAQ
-    ========================= -->
-    <section class="faq pt-130 pb-100">
-      <div class="container">
-        <div class="row" id="accordion">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse1">
-                <a class="accordion__title" href="faqs.html#">Which Plan Is Right For Me?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse1" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse2">
-                <a class="accordion__title" href="faqs.html#">Do I have to commit to a contract?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse2" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item opened">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse3">
-                <a class="accordion__title" href="faqs.html#">What Payment Methods Are Available?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse3" class="collapse show" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse4">
-                <a class="accordion__title" href="faqs.html#">What if I pick the wrong plan?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse4" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse5">
-                <a class="accordion__title" href="faqs.html#">Any contracts or commitments?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse5" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse6">
-                <a class="accordion__title" href="faqs.html#">What are my payment options?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse6" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse7">
-                <a class="accordion__title" href="faqs.html#">How does the free trial work?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse7" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse8">
-                <a class="accordion__title" href="faqs.html#">What Payment Methods Are Available?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse8" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse9">
-                <a class="accordion__title" href="faqs.html#">How does the free trial work?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse9" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item opened">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse10">
-                <a class="accordion__title" href="faqs.html#">If I have questions, where can I find answers? </a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse10" class="collapse show" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.FAQ -->
-
-    <!-- =========================
-           Banner layout 4
-    =========================== -->
-    <section class="banner-layout4 py-0">
-      <div class="bg-img"><img src="assets/images/backgrounds/14.jpg" alt="background"></div>
-      <div class="container-fluid px-0">
-        <div class="row row-no-gutter">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 background-banner d-flex">
-            <div class="bg-img"><img src="assets/images/banners/6.jpg" alt="banner"></div>
-            <div class="cta-banner bg-primary align-self-end">
-              <div class="cta__icon color-white"><i class="icon-developer"></i></div>
-              <h4 class="cta__title color-white">Since 1999</h4>
-              <p class="cta__desc color-white mb-25">Provide users with appropriate view and access to requests,
-                problems, changes,
-                contracts, solutions, and reports.</p>
-              <a href="faqs.html#" class="btn btn__link btn__white btn__icon px-0">
-                <span>Find Your Solution</span> <i class="icon-arrow-right"></i>
-              </a>
-            </div><!-- /.cta-banner -->
-          </div><!-- /.col-xl-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 fancybox-light">
-            <div class="inner-padding">
-              <div class="row">
-                <div class="col-12">
-                  <div class="heading heading-light mb-60">
-                    <h3 class="heading__title mb-30">Easy solutions for all difficult IT problems, keep business safe &
-                      ensure
-                      high availability.</h3>
-                  </div><!-- /.heading -->
-                </div>
-                <div class="col-sm-6">
-                  <!-- fancybox item #1 -->
-                  <div class="fancybox-item">
-                    <div class="fancybox__icon">
-                      <i class="icon-coding"></i>
-                    </div><!-- /.fancybox__icon -->
-                    <div class="fancybox__content">
-                      <h4 class="fancybox__title">Software Asset</h4>
-                      <p class="fancybox__desc">All aspects of your software assets including purchasing,
-                        deployment & maintenance.</p>
-                    </div><!-- /.fancybox-content -->
-                  </div><!-- /.fancybox-item -->
-                </div><!-- /.col-sm-6 -->
-                <div class="col-sm-6">
-                  <!-- fancybox item #2 -->
-                  <div class="fancybox-item">
-                    <div class="fancybox__icon">
-                      <i class="icon-programming2"></i>
-                    </div><!-- /.fancybox__icon -->
-                    <div class="fancybox__content">
-                      <h4 class="fancybox__title">Privileged Access</h4>
-                      <p class="fancybox__desc">Extend proven Tech best practices to HR, finance, and other service
-                        delivery areas.</p>
-                    </div><!-- /.fancybox-content -->
-                  </div><!-- /.fancybox-item -->
-                </div><!-- /.col-sm-6 -->
-                <div class="col-12">
-                  <div class="d-flex flex-wrap read-note">
-                    <div class="rating mb-10 mr-40">
-                      <i class="fas fa-star color-primary"></i>
-                      <i class="fas fa-star color-primary"></i>
-                      <i class="fas fa-star color-primary"></i>
-                      <i class="fas fa-star color-primary"></i>
-                      <i class="fas fa-star color-primary"></i>
-                    </div>
-                    <p class="read-note__text color-white">
-                      <span class="font-weight-bold text-underlined">99.9% Customer Satisfaction</span>
-                      based on 750+ reviews and 20,000 Objective Resource
-                    </p>
-                  </div>
-                </div>
-              </div><!-- /.row -->
-            </div>
-          </div><!-- /.col-xl-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Banner layout 4 -->
-
-    <!-- ========================
-      About Layout 5
-    =========================== -->
-    <section class="about-layout2 animated-Progressbars">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
-            <div class="heading mb-30">
-              <div class="d-flex align-items-center mb-20">
-                <div class="divider divider-primary mr-30"></div>
-                <h2 class="heading__subtitle mb-0">Timely Service Delivery &amp; Incident Resolutions!! </h2>
-              </div>
-              <h3 class="heading__title mb-40">Manages service delivery across various business like, HR, Legal and
-                other IT departments!!
-              </h3>
-            </div>
-          </div><!-- /.col-xl-5 -->
-        </div><!-- /.row -->
-        <div class="row about__Text">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 offset-xl-1">
-            <i class="icon-quote"></i>
-            <p>SmartData has been helping organizations throughout the World to manage their IT with our unique approach
-              to technology management and consultancy solutions. Provide users with appropriate view and access
-              permissions to requests, problems, changes, contracts, assets, solutions, and reports </p>
-            <img src="assets/images/about/singnture.png" alt="singnture" class="mb-20">
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="content-card">
+            <h2 class="mb-3">Why an FAQ Page Matters for SEO</h2>
+            <p>
+              A well-structured FAQ page helps search engines understand your services, business process,
+              and customer intent more deeply. It also improves internal content relevance by covering
+              transactional, informational, and trust-building queries related to your company.
+            </p>
+            <ul>
+              <li>Targets long-tail search queries naturally</li>
+              <li>Improves user experience by answering concerns quickly</li>
+              <li>Strengthens topical authority around your services</li>
+              <li>Supports richer indexing through FAQ schema markup</li>
+            </ul>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 offset-xl-1">
-            <p class="mb-40">As one of the world's largest ITService Providers, our deep pool of certified engineers and
-              IT staff are ready to help you to keep your IT business safe & ensure high availability.</p>
-            <!-- progress 1 -->
-            <div class="progress-item">
-              <h5 class="progress__title">Cyber Security</h5>
-              <div class="progress">
-                <div class="progress-bar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                  <span class="progress__percentage"></span>
-                </div>
-              </div><!-- /.progress -->
-            </div><!-- /.progress-item  -->
-            <!-- progress 2 -->
-            <div class="progress-item">
-              <h5 class="progress__title">Cloud Computing</h5>
-              <div class="progress">
-                <div class="progress-bar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                  <span class="progress__percentage"></span>
-                </div>
-              </div><!-- /.progress -->
-            </div><!-- /.progress-item  -->
-            <!-- progress 3 -->
-            <div class="progress-item">
-              <h5 class="progress__title">Cloud Computing</h5>
-              <div class="progress">
-                <div class="progress-bar" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100" role="progressbar">
-                  <span class="progress__percentage"></span>
-                </div>
-              </div><!-- /.progress -->
-            </div><!-- /.progress-item  -->
-          </div><!-- /.col-xl-5 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.About Layout 5 -->
+        </div>
+
+        <div class="col-lg-6">
+          <div class="content-card">
+            <h2 class="mb-3">What This Page Covers</h2>
+            <p>
+              This FAQ page is designed for Emergexians service categories such as website development,
+              mobile app development, software development, e-commerce solutions, AI automation,
+              technical support, project timelines, pricing, and consultation process.
+            </p>
+            <ul>
+              <li>Common service and pricing questions</li>
+              <li>Development timelines and project process</li>
+              <li>Maintenance, support, and post-delivery details</li>
+              <li>Lead-generation-focused answers for users ready to inquire</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          These FAQs are written to support both users and search engines with clear answers about
+          Emergexians services, process, and support model.
+        </p>
+      </div>
+
+      <div class="faq-wrapper">
+        <div class="accordion" id="faqAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                What services does Emergexians provide?
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Emergexians provides website development, mobile app development, custom software development, e-commerce solutions, AI and automation services, technical support and maintenance, and business-focused digital technology services.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                How much does website development cost at Emergexians?
+              </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Website development cost depends on the number of pages, design style, features, integrations, dynamic functionality, and project scope. Emergexians offers standard plans as well as custom quotations based on business requirements.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                How long does it take to complete a website or software project?
+              </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Project timelines depend on requirements, complexity, revisions, integrations, and feature scope. Basic websites usually take less time than e-commerce platforms, mobile apps, or custom software systems. Emergexians shares a timeline after understanding your project needs.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                Does Emergexians provide mobile app development services?
+              </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, Emergexians provides mobile app development services for Android, iOS, and cross-platform applications. These include business apps, customer apps, booking apps, service apps, and custom mobile solutions.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                Can Emergexians build custom software for my business?
+              </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, Emergexians develops custom software solutions such as CRM systems, ERP platforms, admin dashboards, portals, automation systems, and tailored business management software based on workflow requirements.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                Does Emergexians develop e-commerce websites and online stores?
+              </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, Emergexians develops e-commerce websites and online store solutions with product catalogs, shopping cart systems, secure checkout flow, payment gateway integration, order management, and mobile-friendly shopping experiences.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                What is included in technical support and maintenance services?
+              </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="faq7" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Technical support and maintenance may include bug fixing, performance optimization, security updates, monitoring, website maintenance, software support, hosting assistance, system updates, and long-term maintenance plans.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                Does Emergexians provide AI and automation solutions?
+              </button>
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="faq8" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, Emergexians provides AI and automation solutions such as AI chatbots, workflow automation, process automation, business integrations, smart support systems, and operational efficiency tools.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq9">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                Do you offer custom pricing or only fixed plans?
+              </button>
+            </h2>
+            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="faq9" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Emergexians offers both standard pricing plans and custom quotations. Fixed plans are useful for common business needs, while custom pricing is provided for advanced features, integrations, unique workflows, and larger project scopes.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq10">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                How does the project process work at Emergexians?
+              </button>
+            </h2>
+            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="faq10" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                The process typically starts with requirement discussion and consultation, followed by planning, design, development, review, testing, deployment, and post-launch support. The exact workflow depends on your project type and service category.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq11">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                Will my website or software be SEO friendly and scalable?
+              </button>
+            </h2>
+            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="faq11" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Emergexians focuses on building structured, responsive, performance-oriented, and SEO-friendly digital solutions. Scalability also depends on project planning, architecture, and future feature requirements, which are considered during development.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq12">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                How can I contact Emergexians for a project discussion?
+              </button>
+            </h2>
+            <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="faq12" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                You can contact Emergexians through the website contact page, inquiry form, email, or phone to discuss your project, request a quotation, ask service-related questions, or book a consultation.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">SEO Advantages of This FAQ Structure</h2>
+        <p class="section-subtitle">
+          This page is built to improve content quality, search relevance, and user experience.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-4">
+          <div class="seo-box">
+            <i class="bi bi-search"></i>
+            <h5>Targets Search Intent</h5>
+            <p>
+              The questions are written around common user intent related to services, pricing,
+              delivery, support, and business decision-making.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="seo-box">
+            <i class="bi bi-diagram-3-fill"></i>
+            <h5>Supports Topical Authority</h5>
+            <p>
+              Covering multiple service categories in one place helps search engines better understand
+              the breadth of Emergexians expertise.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="seo-box">
+            <i class="bi bi-code-slash"></i>
+            <h5>Includes FAQ Schema</h5>
+            <p>
+              The structured data at the top of the page helps search engines read FAQ content
+              in a more organized way.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Still Have Questions About Our Services?</h2>
+        <p>
+          Connect with Emergexians to discuss your website, mobile app, software, e-commerce,
+          AI automation, or support requirements. Our team will guide you with the right solution.
+        </p>
+        <div class="cta-actions">
+          <a href="contact-us.html" class="btn-cta-light">Contact Us</a>
+          <a href="services.html" class="btn-cta-outline">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
       <!-- Footer Start -->
   <footer class="emx-footer">

@@ -1,23 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Smart Data  IT Solutions &  Services Template">
-  <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>Smart Data IT Solutions & Services Template</title>
+  <title>Careers | Emergexians</title>
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap">
+  <meta name="description" content="Explore career opportunities at Emergexians. Join our team in web development, app development, software engineering, digital marketing, business development, technical support, and operations." />
+  <meta name="keywords" content="careers, jobs, join Emergexians, web developer jobs, software jobs, app developer jobs, digital marketing jobs, IT company careers, Emergexians" />
+  <meta name="author" content="Emergexians" />
+
+  <meta property="og:title" content="Careers | Emergexians" />
+  <meta property="og:description" content="Build your career with Emergexians and work on modern digital solutions." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="assets/images/favicon/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="https://www.emergexians.com/assets/images/favicon/favicon.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
-</head>
+  <style>
+    :root {
+      --primary: #6083be;
+      --primary-dark: #31558f;
+      --primary-light: #eaf1ff;
+      --dark: #337bf8;
+      --dark-2: #337bf8;
+      --text: #475569;
+      --white: #ffffff;
+      --border: rgba(255,255,255,0.15);
+      --shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+      --radius: 22px;
+    }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background: #f8fbff;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .section-padding {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .section-subtitle {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .hero-section {
+      position: relative;
+      padding: 120px 0 90px;
+      background:
+        radial-gradient(circle at top left, rgba(96,131,190,0.20), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(49,85,143,0.18), transparent 35%),
+        linear-gradient(135deg, #071120 0%, #12233f 45%, #6083be 100%);
+      overflow: hidden;
+    }
+
+    .hero-section::before,
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 0;
+    }
+
+    .hero-section::before {
+      width: 280px;
+      height: 280px;
+      background: rgba(255,255,255,0.12);
+      top: -60px;
+      left: -80px;
+    }
+
+    .hero-section::after {
+      width: 320px;
+      height: 320px;
+      background: rgba(96,131,190,0.18);
+      right: -80px;
+      bottom: -100px;
+    }
+
+    .hero-content,
+    .hero-visual {
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.16);
+      color: #fff;
+      font-size: 0.9rem;
+      margin-bottom: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-title {
+      font-size: 3.7rem;
+      line-height: 1.05;
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      color: #dbeafe;
+    }
+
+    .hero-text {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.06rem;
+      line-height: 1.9;
+      max-width: 650px;
+      margin-bottom: 32px;
+    }
+
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .btn-main {
+      background: #fff;
+      color: var(--primary-dark);
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: 0.3s ease;
+      box-shadow: 0 10px 30px rgba(255,255,255,0.12);
+      display: inline-block;
+    }
+
+    .btn-main:hover {
+      transform: translateY(-2px);
+      background: #f8fbff;
+      color: var(--primary-dark);
+    }
+
+    .btn-outline-light-custom {
+      padding: 13px 24px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.24);
+      color: #fff;
+      font-weight: 600;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.05);
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-outline-light-custom:hover {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .hero-stat h4 {
+      color: #fff;
+      margin-bottom: 4px;
+      font-size: 1.8rem;
+    }
+
+    .hero-stat p {
+      margin: 0;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.95rem;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 28px;
+      padding: 24px;
+      backdrop-filter: blur(16px);
+      box-shadow: var(--shadow);
+      color: #fff;
+    }
+
+    .hero-mini-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 20px;
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+
+    .hero-mini-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .hero-mini-card i {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .hero-mini-card h5 {
+      color: #fff;
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+
+    .hero-mini-card p {
+      margin-bottom: 0;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .about-card,
+    .benefit-card,
+    .job-card,
+    .culture-card,
+    .process-card,
+    .cta-box {
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+    }
+
+    .about-card {
+      padding: 40px;
+      border: 1px solid rgba(96,131,190,0.08);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    }
+
+    .about-badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 8px 14px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+
+    .about-text {
+      color: var(--text);
+      line-height: 1.9;
+      font-size: 1rem;
+    }
+
+    .about-points {
+      margin-top: 25px;
+    }
+
+    .about-points .point {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      color: var(--dark-2);
+      font-weight: 500;
+    }
+
+    .about-points i {
+      color: var(--primary);
+      font-size: 1.1rem;
+      margin-top: 2px;
+    }
+
+    .benefit-card,
+    .culture-card,
+    .process-card {
+      padding: 28px;
+      border: 1px solid rgba(96,131,190,0.08);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      height: 100%;
+      transition: 0.35s ease;
+    }
+
+    .benefit-card:hover,
+    .culture-card:hover,
+    .process-card:hover,
+    .job-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 60px rgba(49, 85, 143, 0.14);
+    }
+
+    .benefit-icon,
+    .culture-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(96,131,190,0.18), rgba(49,85,143,0.12));
+      color: var(--primary-dark);
+      font-size: 1.5rem;
+      margin-bottom: 18px;
+    }
+
+    .benefit-card p,
+    .culture-card p,
+    .process-card p {
+      color: var(--text);
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    .job-card {
+      padding: 28px;
+      border: 1px solid rgba(96,131,190,0.10);
+      background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+      height: 100%;
+      transition: 0.35s ease;
+    }
+
+    .job-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .job-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-size: 0.84rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .job-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .job-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #f2f6fd;
+      color: var(--dark-2);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .job-card p {
+      color: var(--text);
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .job-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 22px;
+    }
+
+    .job-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      color: var(--dark-2);
+      line-height: 1.7;
+      font-size: 0.96rem;
+    }
+
+    .job-list li i {
+      color: #16a34a;
+      margin-top: 3px;
+    }
+
+    .btn-apply {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: 0.3s ease;
+    }
+
+    .btn-apply:hover {
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 16px 30px rgba(96,131,190,0.24);
+    }
+
+    .process-number {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      font-size: 1.2rem;
+      font-weight: 800;
+      box-shadow: 0 14px 30px rgba(96,131,190,0.25);
+    }
+
+    .cta-box {
+      padding: 60px 40px;
+      background: linear-gradient(135deg, #0f172a 0%, #274171 50%, #6083be 100%);
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+      top: -60px;
+      right: -40px;
+      filter: blur(10px);
+    }
+
+    .cta-box h2 {
+      color: #fff;
+      font-size: 2.3rem;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.82);
+      max-width: 760px;
+      margin: 0 auto 28px;
+      position: relative;
+      z-index: 2;
+      line-height: 1.9;
+    }
+
+    .cta-actions {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn-cta-light {
+      background: #fff;
+      color: var(--primary-dark);
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .btn-cta-light:hover {
+      color: var(--primary-dark);
+      background: #f4f8ff;
+    }
+
+    .btn-cta-outline {
+      border: 1px solid rgba(255,255,255,0.24);
+      color: #fff;
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-weight: 600;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .btn-cta-outline:hover {
+      color: #fff;
+      background: rgba(255,255,255,0.12);
+    }
+
+    .note-text {
+      color: var(--text);
+      line-height: 1.8;
+      font-size: 0.96rem;
+    }
+
+    @media (max-width: 991px) {
+      .hero-title {
+        font-size: 2.8rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .section-padding {
+        padding: 80px 0;
+      }
+
+      .hero-visual {
+        margin-top: 40px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero-section {
+        padding: 90px 0 70px;
+      }
+
+      .hero-title {
+        font-size: 2.2rem;
+      }
+
+      .hero-text {
+        font-size: 0.98rem;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .about-card,
+      .cta-box {
+        padding: 30px 22px;
+      }
+
+      .hero-stats {
+        gap: 18px;
+      }
+
+      .job-top {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
 <body>
-  <div class="wrapper">
+
+
+      <div class="wrapper">
     <div class="preloader">
       <div class="sk-cube-grid">
         <span class="sk-cube"></span>
@@ -35,7 +603,20 @@
     <!-- =========================
         Header 
     =========================== -->
-    <header class="header header-transparent">
+    <header class="header header-light header-light-has-topbar">
+      <div class="d-none d-md-block">
+        <div class="topbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <span class="topbar__text">
+                  CIN: U62020DL2024PTC436878   <span style="color: blue;">ISO Certified (ISO 9001:2015, ISO/IEC 27001:2022)</span> G.S.T: 07AAICE4126E1ZX
+                </span>
+              </div><!-- /.col-12 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.topbar -->
+      </div>
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container">
 
@@ -49,33 +630,13 @@
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
               <li class="nav__item  has-dropdown">
-                <a href="index.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Home</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="index.html" class="nav__item-link">Home Main</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-modern.html" class="nav__item-link">Home Modern</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-classic.html" class="nav__item-link">Home Classic</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
+                <a href="./" data-toggle="dropdown" class="nav__item-link">Home</a>
               </li><!-- /.nav-item -->
               <li class="nav__item  has-dropdown">
-                <a href="careers.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Company</a>
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Company</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
-                    <a href="about-us.html" class="nav__item-link">About Us</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="why-us.html" class="nav__item-link">Why Choose Us</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
                     <a href="leadership-team.html" class="nav__item-link">Leadership Team</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="awards.html" class="nav__item-link">Award & Recognition</a>
                   </li><!-- /.nav-item -->
                   <li class="nav__item">
                     <a href="pricing.html" class="nav__item-link">Pricing & Plans</a>
@@ -89,53 +650,23 @@
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
               <li class="nav__item  has-dropdown">
-                <a href="careers.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">IT Solutions</a>
-                <ul class="dropdown-menu wide-dropdown-menu">
+                <a href="it-solutions.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link">IT Solutions</a>
+                <ul class="dropdown-menu">
                   <li class="nav__item">
                     <div class="row mx-0">
                       <div class="col-sm-6 dropdown-menu-col">
-                        <a href="it-solutions.html" class="nav__item-link dropdown-menu-title">IT Solutions</a>
                         <ul class="nav flex-column">
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT
-                              Management</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/website-development.html">Website Development Services</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Cyber
-                              Security</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/mobile-app-development.html">App Development Services</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Cloud
-                              Computing</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/custom-software-development.html">Custom Software Development</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT
-                              Consulting</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/e-commerce-solutions.html">E-Commerce Solutions</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Software
-                              Dev</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/ai-&-automation-solutions.html">Ai & Automation Solutions</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT Support</a>
-                          </li>
-                          <!-- /.nav-item -->
-                        </ul>
-                      </div><!-- /.col-sm-6 -->
-                      <div class="col-sm-6 dropdown-menu-col">
-                        <a href="industries.html" class="nav__item-link dropdown-menu-title">Industries</a>
-                        <ul class="nav flex-column">
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Education,
-                              Non-Profit</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Accounting,
-                              Finance</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Government &
-                              Public</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Energy
-                              &
-                              Utilities</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Legal,
-                              Law
-                              Firms</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Manufacturing</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/technical-support-&-maintenance.html">Technical Support & Maintenance</a>
                           </li>
                           <!-- /.nav-item -->
                         </ul>
@@ -144,45 +675,8 @@
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
-                <a href="careers.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">News&Media</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="blog.html" class="nav__item-link">Our Blog</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-grid.html" class="nav__item-link">Case Studies Grid</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-carousel.html" class="nav__item-link">Case Studies Carousel</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-classic.html" class="nav__item-link">Case Studies Classic</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-single.html" class="nav__item-link">Single Case Study</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
-                <a href="careers.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Features</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="coming-soon.html" class="nav__item-link">Coming Soon</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="404.html" class="nav__item-link">404 Page</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="careers.html#" class="nav__item-link  open-register-popup">Register</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="careers.html#" class="nav__item-link  open-login-popup">Login</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
+              <li class="nav__item">
+                <a href="about-us.html" class="nav__item-link">About Us</a>
               </li><!-- /.nav-item -->
               <li class="nav__item">
                 <a href="contact-us.html" class="nav__item-link">Contacts</a>
@@ -193,453 +687,375 @@
             <li class="d-none d-xl-block">
               <a href="request-quote.html" class="btn action__btn-contact">Request A Quote</a>
             </li>
-            <li>
-              <button class="action__btn action__btn-login open-login-popup">
-                <i class="icon-user"></i><span>Login</span>
-              </button>
-            </li>
           </ul><!-- /.navbar-actions -->
         </div><!-- /.container -->
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
 
-    <!-- ========================
-       page title 
-    =========================== -->
-    <section class="page-title page-title-layout4 text-center bg-overlay bg-overlay-gradient bg-parallax">
-      <div class="bg-img"><img src="assets/images/page-titles/7.jpg" alt="background"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="pagetitle__heading">Careers</h1>
-            <p class="pagetitle__desc">Trusted by the world's best organizations, for 21 years and running, it has been
-              delivering smiles to hundreds of IT advisors, developers, users, and business owners.
-            </p>
-          </div><!-- /.col-xl-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.page-title -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 hero-content">
+          <div class="eyebrow">
+            <i class="bi bi-briefcase-fill"></i>
+            Careers at Emergexians
+          </div>
+          <h1 class="hero-title">Build Your Career With a <span>Fast-Growing Digital Team</span></h1>
+          <p class="hero-text">
+            Join Emergexians and work on modern websites, mobile apps, software systems,
+            e-commerce platforms, automation tools, and digital growth projects. We are
+            looking for passionate people who want to learn, build, and grow with us.
+          </p>
 
-    <!-- ========================
-      Secondary Nav
-    =========================== -->
-    <section class="secondary-nav sticky-top py-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="nav nav-tabs justify-content-center">
-              <a href="about-us.html" class="nav__link">About Us</a>
-              <a href="why-us.html" class="nav__link">Why Choose Us</a>
-              <a href="leadership-team.html" class="nav__link">Leadership Team</a>
-              <a href="awards.html" class="nav__link">Awards & Recognition</a>
-              <a href="pricing.html" class="nav__link">Pricing & Plans</a>
-              <a href="faqs.html" class="nav__link">Help & FAQs</a>
-              <a href="careers.html" class="nav__link active">Careers</a>
-            </nav>
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Secondary Nav -->
+          <div class="hero-btns">
+            <a href="#open-positions" class="btn-main">View Open Positions</a>
+            <a href="contact-us.html" class="btn-outline-light-custom">Send Your Resume</a>
+          </div>
 
-    <!-- ========================= 
-         careers
-    =========================  -->
-    <section class="careers">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading text-center mb-50">
-              <h2 class="heading__subtitle color-body">We Prepare For The Future.</h2>
-              <h3 class="heading__title">Inspire And Get Inspired By Professional Experts</h3>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-10 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-12">
-            <!-- career item #1 -->
-            <div class="job-item">
-              <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                  <div class="job-item__meta">
-                    <span class="job-item__type">Full Time</span>
-                    <span class="job-item__location">New York</span>
-                  </div>
-                  <h4 class="job-item__title">Chief Executive Officer</h4>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-sm-12 col-md-12 col-lg-5">
-                  <p class="job-item__desc">A chief executive officer (CEO) is the highest-ranking executive in a
-                    company, and their primary responsibilities include making major corporate decisions.</p>
-                </div><!-- /.col-lg-5 -->
-                <div class="col-sm-12 col-md-12 col-lg-3 d-flex align-items-center justify-content-end btn-wrap">
-                  <a href="careers.html#" class="btn btn__secondary btn__icon">
-                    <span>Apply Now</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
-                </div><!-- /.col-lg-3 -->
-              </div><!-- /.row -->
-            </div><!-- /.job-item -->
-            <!-- career item #2 -->
-            <div class="job-item">
-              <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                  <div class="job-item__meta">
-                    <span class="job-item__type">Full Time</span>
-                    <span class="job-item__location">San Francisco</span>
-                  </div>
-                  <h4 class="job-item__title">Chief Financial Officer</h4>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-sm-12 col-md-12 col-lg-5">
-                  <p class="job-item__desc">A chief executive officer (CEO) is the highest-ranking executive in a
-                    company, and their primary responsibilities include making major corporate decisions.</p>
-                </div><!-- /.col-lg-5 -->
-                <div class="col-sm-12 col-md-12 col-lg-3 d-flex align-items-center justify-content-end btn-wrap">
-                  <a href="careers.html#" class="btn btn__secondary btn__icon">
-                    <span>Apply Now</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
-                </div><!-- /.col-lg-3 -->
-              </div><!-- /.row -->
-            </div><!-- /.job-item -->
-            <!-- career item #3 -->
-            <div class="job-item">
-              <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                  <div class="job-item__meta">
-                    <span class="job-item__type">Full Time</span>
-                    <span class="job-item__location">New York</span>
-                  </div>
-                  <h4 class="job-item__title">Global Sales & Marketing</h4>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-sm-12 col-md-12 col-lg-5">
-                  <p class="job-item__desc">A chief executive officer (CEO) is the highest-ranking executive in a
-                    company, and their primary responsibilities include making major corporate decisions.</p>
-                </div><!-- /.col-lg-5 -->
-                <div class="col-sm-12 col-md-12 col-lg-3 d-flex align-items-center justify-content-end btn-wrap">
-                  <a href="careers.html#" class="btn btn__secondary btn__icon">
-                    <span>Apply Now</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
-                </div><!-- /.col-lg-3 -->
-              </div><!-- /.row -->
-            </div><!-- /.job-item -->
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.careers -->
-
-    <!-- ======================
-    History Timeline
-    ========================= -->
-    <section class="history-timeline pb-0">
-      <div class="history-timeline-bg">
-        <div class="bg-img"><img src="assets/images/backgrounds/1.jpg" alt="background"></div>
-      </div>
-      <div class="container">
-        <div class="row heading mb-50">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="d-flex align-items-center mb-20">
-              <div class="divider divider-primary mr-30"></div>
-              <h2 class="heading__subtitle mb-0">Explore Our Great History!!</h2>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <h4>Growth</h4>
+              <p>Learning-focused environment</p>
             </div>
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <h3 class="heading__title color-white">One of the world's largest IT Providers since 2005.</h3>
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-      <div class="position-relative">
-        <div class="timeline-bar">
-          <div class="container d-flex">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-          </div><!-- /.container -->
-        </div><!-- /.timeline-bar -->
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="timeline-carousel-wrapper mb-70">
-                <div class="slick-carousel carousel-arrows-light"
-                  data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "arrows": true, "dots": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 1}}, {"breakpoint": 768, "settings": {"slidesToShow": 1}}, {"breakpoint": 570, "settings": {"slidesToShow": 1}}]}'>
-                  <div class="carousel-block">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #1 -->
-                        <div class="timeline-item row align-items-end">
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/1.jpg" alt="timeline">
-                          </div>
-                          <div class="timeline__content col-sm-6">
-                            <p class="timeline__desc">Our support works around the clock to ensure your work is
-                              secure and monitored safely access to over 99 IT professionals working to help you
-                            </p>
-                            <h4 class="timeline__year mb-0">2005</h4>
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #2 -->
-                        <div class="timeline-item row align-items-end">
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/2.jpg" alt="timeline">
-                          </div>
-                          <div class="timeline__content col-sm-6">
-                            <p class="timeline__desc">Providing consulting expertise on a specific technology,
-                              strategizing on IT, providing a security assessment, or managing IT infrastructure.
-                            </p>
-                            <h4 class="timeline__year mb-0">2010</h4>
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #3 -->
-                        <div class="timeline-item row">
-                          <div class="timeline__content col-sm-6">
-                            <h4 class="timeline__year">2015</h4>
-                            <p class="timeline__desc">We partner with you to enable your technology so you mfocus
-                              on
-                              your organization’s mission leverage our talent, and creativity.
-                            </p>
-                          </div>
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/3.jpg" alt="timeline">
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #4 -->
-                        <div class="timeline-item row">
-                          <div class="timeline__content col-sm-6">
-                            <h4 class="timeline__year">2020</h4>
-                            <p class="timeline__desc">Our people are held to the highest level accountability to
-                              ensure you are always satisfied with your results and commitment
-                            </p>
-                          </div>
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/4.jpg" alt="timeline">
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                    </div><!-- /.row -->
-                  </div><!-- /.carousel-block -->
-                  <div class="carousel-block">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #1 -->
-                        <div class="timeline-item row">
-                          <div class="timeline__content col-sm-6">
-                            <h4 class="timeline__year">2015</h4>
-                            <p class="timeline__desc">We partner with you to enable your technology so you mfocus
-                              on
-                              your organization’s mission leverage our talent, and creativity.
-                            </p>
-                          </div>
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/3.jpg" alt="timeline">
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #2 -->
-                        <div class="timeline-item row">
-                          <div class="timeline__content col-sm-6">
-                            <h4 class="timeline__year">2020</h4>
-                            <p class="timeline__desc">Our people are held to the highest level accountability to
-                              ensure you are always satisfied with your results and commitment
-                            </p>
-                          </div>
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/4.jpg" alt="timeline">
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #3 -->
-                        <div class="timeline-item row align-items-end">
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/1.jpg" alt="timeline">
-                          </div>
-                          <div class="timeline__content col-sm-6">
-                            <p class="timeline__desc">Our support works around the clock to ensure your work is
-                              secure and monitored safely access to over 99 IT professionals working to help you
-                            </p>
-                            <h4 class="timeline__year mb-0">2005</h4>
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #4 -->
-                        <div class="timeline-item row align-items-end">
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/2.jpg" alt="timeline">
-                          </div>
-                          <div class="timeline__content col-sm-6">
-                            <p class="timeline__desc">Providing consulting expertise on a specific technology,
-                              strategizing on IT, providing a security assessment, or managing IT infrastructure.
-                            </p>
-                            <h4 class="timeline__year mb-0">2010</h4>
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                    </div><!-- /.row -->
-                  </div><!-- /.carousel-block -->
-                </div><!-- /.carousel -->
-              </div>
-            </div><!-- /.col-12 -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 d-flex flex-column justify-content-between">
-            <div class="row row-no-gutter read-note">
-              <div class="col-sm-4">
-                <div class="rating mb-10">
-                  <i class="fas fa-star color-primary"></i>
-                  <i class="fas fa-star color-primary"></i>
-                  <i class="fas fa-star color-primary"></i>
-                  <i class="fas fa-star color-primary"></i>
-                  <i class="fas fa-star color-primary"></i>
-                </div>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-sm-8">
-                <p class="read-note__text color-white">
-                  <span class="font-weight-bold text-underlined">99.9% Customer Satisfaction</span>
-                  based on 750+ reviews and 20,000 Objective Resource
-                </p>
-              </div><!-- /.col-lg-8 -->
-            </div><!-- /.row -->
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <p class="mb-30 font-weight-bold sub__desc">As one of the world's largest ITService Providers with over
-                  120
-                  engineers and IT support staff are ready to help.</p>
-                <a href="careers.html#" class="btn btn__primary btn__bordered btn__icon mb-30">
-                  <span>Request Demo</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.col-sm-6 -->
-              <div class="col-sm-12 col-md-6">
-                <ul class="list-items list-unstyled mb-30">
-                  <li>450,000 client’s interactions </li>
-                  <li>Help challenge critical activities</li>
-                  <li>Simplify & Automate Workflows</li>
-                  <li>Peer perspectives and advice</li>
-                </ul>
-              </div><!-- /.col-sm-6 -->
-            </div><!-- /.row -->
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <img src="assets/images/banners/3.jpg" alt="banner">
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.History Timeline -->
+            <div class="hero-stat">
+              <h4>Real Work</h4>
+              <p>Hands-on project exposure</p>
+            </div>
+            <div class="hero-stat">
+              <h4>Team</h4>
+              <p>Collaborative culture</p>
+            </div>
+          </div>
+        </div>
 
-    <!-- ======================
-      Blog Grid
-    ========================= -->
-    <section class="blog-grid pb-50">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading text-center mb-40">
-              <h2 class="heading__subtitle">Recent Articles</h2>
-              <h3 class="heading__title">Resource Library</h3>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <!-- Blog Item #1 -->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/1.jpg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post__content">
-                <div class="post__meta d-flex flex-wrap">
-                  <div class="post__meta-cat">
-                    <a href="careers.html#">Consulting</a><a href="careers.html#">Sales</a>
-                  </div><!-- /.blog-meta-cat -->
-                  <span class="post__meta-date">May 13, 2020</span>
-                </div>
-                <h4 class="post__title"><a href="careers.html#">Five Ways to Develop a World Class Sales Operations
-                    Function</a>
-                </h4>
-                <p class="post__desc">Outsourcing IT infrastructure is a concept that has been around for a while.
-                  Characterized in terms of technicians and engineers, workstations and servers, the idea of outsourcing
-                  your basic IT needs...
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Blog Item #2 -->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/2.jpg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post__content">
-                <div class="post__meta d-flex flex-wrap">
-                  <div class="post__meta-cat">
-                    <a href="careers.html#">Tech</a><a href="careers.html#">Communications</a>
-                  </div><!-- /.blog-meta-cat -->
-                  <span class="post__meta-date">April 17, 2020</span>
-                </div>
-                <h4 class="post__title"><a href="careers.html#">Succession Risks That Threaten Your Leadership Strategy</a>
-                </h4>
-                <p class="post__desc">Today’s organizations need a quality bench of leaders to drive business
-                  outcomes and satisfy employees, customers and investors who now demand more transparency and
-                  accountability...
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Blog Item #3 -->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog-single-post.html">
-                  <img src="assets/images/blog/grid/3.jpg" alt="blog image">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post__content">
-                <div class="post__meta d-flex flex-wrap">
-                  <div class="post__meta-cat">
-                    <a href="careers.html#">Digital Business</a><a href="careers.html#">Cloud</a>
-                  </div><!-- /.blog-meta-cat -->
-                  <span class="post__meta-date">March 20, 2020</span>
-                </div>
-                <h4 class="post__title"><a href="careers.html#">What Do Employee Engagement Surveys Tell You About
-                    Employee?</a>
-                </h4>
-                <p class="post__desc">Outsourcing IT infrastructure is a concept that has been around for a while.
-                  Characterized in terms of technicians and engineers, workstations and servers, the idea of outsourcing
-                  your basic IT needs...
-                </p>
-                <a href="blog-single-post.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.blog Grid -->
+        <div class="col-lg-5 hero-visual">
+          <div class="hero-card">
+            <div class="hero-mini-card">
+              <i class="bi bi-code-slash"></i>
+              <h5>Work on Modern Digital Projects</h5>
+              <p>Contribute to web, app, software, automation, and digital business solutions for real clients and products.</p>
+            </div>
+            <div class="hero-mini-card">
+              <i class="bi bi-graph-up-arrow"></i>
+              <h5>Grow with Responsibility</h5>
+              <p>Take ownership, learn fast, and build practical skills that strengthen your professional career.</p>
+            </div>
+            <div class="hero-mini-card">
+              <i class="bi bi-people-fill"></i>
+              <h5>Be Part of a Strong Team</h5>
+              <p>Work with a team that values ideas, execution, consistency, and long-term professional growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="about-card">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <span class="about-badge">Why Work With Us</span>
+            <h2 class="section-title text-start mb-3">A Place Where Skills, Ideas, and Careers Keep Growing</h2>
+            <p class="about-text">
+              At Emergexians, we believe great work comes from people who are curious,
+              committed, and ready to keep improving. We create an environment where
+              team members can take initiative, work on real business challenges, and
+              grow through hands-on experience across technology, design, marketing,
+              support, and operations.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-points">
+              <div class="point"><i class="bi bi-check-circle-fill"></i><span>Opportunity to work on real client and product projects</span></div>
+              <div class="point"><i class="bi bi-check-circle-fill"></i><span>Skill development across modern digital technologies</span></div>
+              <div class="point"><i class="bi bi-check-circle-fill"></i><span>Supportive culture with team collaboration and mentorship</span></div>
+              <div class="point"><i class="bi bi-check-circle-fill"></i><span>Room for growth, responsibility, and leadership</span></div>
+              <div class="point"><i class="bi bi-check-circle-fill"></i><span>Exposure to websites, software, apps, AI, and marketing projects</span></div>
+              <div class="point"><i class="bi bi-check-circle-fill"></i><span>Performance-driven environment with practical learning</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">What You Get at Emergexians</h2>
+        <p class="section-subtitle">
+          We focus on creating a work environment that supports learning, confidence,
+          professional development, and practical achievement.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3">
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="bi bi-lightbulb-fill"></i></div>
+            <h5>Learning & Growth</h5>
+            <p>Build real-world skills through live projects, structured execution, and continuous hands-on exposure.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="bi bi-award-fill"></i></div>
+            <h5>Career Development</h5>
+            <p>Grow your role with stronger responsibility, better execution, and long-term professional opportunities.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="bi bi-people-fill"></i></div>
+            <h5>Collaborative Team</h5>
+            <p>Work with people who value communication, consistency, ideas, and practical problem-solving.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="bi bi-briefcase-fill"></i></div>
+            <h5>Project Exposure</h5>
+            <p>Contribute to websites, mobile apps, software systems, automation tools, and business growth campaigns.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0" id="open-positions">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Open Positions</h2>
+        <p class="section-subtitle">
+          Explore current opportunities across technology, design, marketing, support,
+          and business functions. You can customize these roles as per your live openings.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="job-card">
+            <div class="job-top">
+              <div>
+                <h4 class="mb-2">Frontend Developer</h4>
+              </div>
+              <div class="job-badge"><i class="bi bi-lightning-fill"></i>Now Closed</div>
+            </div>
+
+            <div class="job-meta">
+              <span><i class="bi bi-geo-alt-fill"></i>On-site / Hybrid</span>
+              <span><i class="bi bi-briefcase-fill"></i>Full Time</span>
+              <span><i class="bi bi-bar-chart-fill"></i>1+ Years</span>
+            </div>
+
+            <p>
+              We are looking for a frontend developer who can create responsive,
+              modern, and user-friendly interfaces for websites, dashboards, and product platforms.
+            </p>
+
+            <ul class="job-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Strong knowledge of HTML, CSS, Bootstrap, JavaScript</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Ability to build responsive and premium UI layouts</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Understanding of clean design implementation and performance</span></li>
+            </ul>
+
+            <a href="job-application.html" class="btn-apply"><i class="bi bi-send-fill"></i>Apply Now</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="job-card">
+            <div class="job-top">
+              <div>
+                <h4 class="mb-2">PHP / Backend Developer</h4>
+              </div>
+              <div class="job-badge"><i class="bi bi-lightning-fill"></i>Now Closed</div>
+            </div>
+
+            <div class="job-meta">
+              <span><i class="bi bi-geo-alt-fill"></i>On-site / Hybrid</span>
+              <span><i class="bi bi-briefcase-fill"></i>Full Time</span>
+              <span><i class="bi bi-bar-chart-fill"></i>1+ Years</span>
+            </div>
+
+            <p>
+              Join us to build custom software, admin panels, portals, and backend systems
+              that support business automation and digital operations.
+            </p>
+
+            <ul class="job-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Experience in PHP, MySQL, APIs, and backend logic</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Knowledge of dashboards, CRUD systems, and integrations</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Ability to write structured and scalable backend code</span></li>
+            </ul>
+
+            <a href="job-application.html" class="btn-apply"><i class="bi bi-send-fill"></i>Apply Now</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="job-card">
+            <div class="job-top">
+              <div>
+                <h4 class="mb-2">Digital Marketing Executive</h4>
+              </div>
+              <div class="job-badge"><i class="bi bi-lightning-fill"></i>Now Closed</div>
+            </div>
+
+            <div class="job-meta">
+              <span><i class="bi bi-geo-alt-fill"></i>On-site</span>
+              <span><i class="bi bi-briefcase-fill"></i>Full Time</span>
+              <span><i class="bi bi-bar-chart-fill"></i>0-2 Years</span>
+            </div>
+
+            <p>
+              We are seeking a digital marketing professional to support SEO, social media,
+              paid marketing, lead generation, and content-driven brand growth.
+            </p>
+
+            <ul class="job-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Knowledge of SEO, SMM, campaigns, and content strategy</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Ability to work on business growth and performance marketing ideas</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Strong communication and execution skills</span></li>
+            </ul>
+
+            <a href="job-application.html" class="btn-apply"><i class="bi bi-send-fill"></i>Apply Now</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="job-card">
+            <div class="job-top">
+              <div>
+                <h4 class="mb-2">Business Development Executive</h4>
+              </div>
+              <div class="job-badge"><i class="bi bi-lightning-fill"></i>Now Closed</div>
+            </div>
+
+            <div class="job-meta">
+              <span><i class="bi bi-geo-alt-fill"></i>On-site</span>
+              <span><i class="bi bi-briefcase-fill"></i>Full Time</span>
+              <span><i class="bi bi-bar-chart-fill"></i>0-2 Years</span>
+            </div>
+
+            <p>
+              Help us expand client relationships, identify business opportunities,
+              coordinate with prospects, and support growth for Emergexians services and products.
+            </p>
+
+            <ul class="job-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Strong communication and client handling ability</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Confidence in business outreach and follow-up</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Interest in IT services, products, and growth strategy</span></li>
+            </ul>
+
+            <a href="job-application.html" class="btn-apply"><i class="bi bi-send-fill"></i>Apply Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <p class="note-text">
+          You can replace these sample roles with your current openings, salary details, location, and application email or form link.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our Work Culture</h2>
+        <p class="section-subtitle">
+          We value discipline, innovation, execution quality, and continuous progress.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-4">
+          <div class="culture-card">
+            <div class="culture-icon"><i class="bi bi-stars"></i></div>
+            <h5>Quality-Driven Work</h5>
+            <p>We aim for strong output, thoughtful execution, and professional delivery in everything we build.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="culture-card">
+            <div class="culture-icon"><i class="bi bi-chat-square-text-fill"></i></div>
+            <h5>Open Communication</h5>
+            <p>We believe clear communication, coordination, and feedback create better work and better teams.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <div class="culture-card">
+            <div class="culture-icon"><i class="bi bi-rocket-takeoff-fill"></i></div>
+            <h5>Growth Mindset</h5>
+            <p>We encourage people who are willing to learn faster, solve better, and keep improving every day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">How Our Hiring Process Works</h2>
+        <p class="section-subtitle">
+          A clear and simple process to understand your profile, skills, and fit for the role.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3">
+          <div class="process-card">
+            <div class="process-number">01</div>
+            <h5>Application</h5>
+            <p>Send your resume, portfolio, or profile details through our application process or contact page.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="process-card">
+            <div class="process-number">02</div>
+            <h5>Screening</h5>
+            <p>We review your experience, skills, and role alignment to shortlist relevant candidates.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="process-card">
+            <div class="process-number">03</div>
+            <h5>Interview</h5>
+            <p>A discussion to understand your technical ability, communication, mindset, and work approach.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="process-card">
+            <div class="process-number">04</div>
+            <h5>Selection</h5>
+            <p>Selected candidates move forward with next steps, onboarding details, and role alignment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Ready to Start Your Career Journey With Emergexians?</h2>
+        <p>
+          Whether you are a developer, designer, marketer, support professional, or business executive,
+          we would love to hear from you. Join us and be part of a team building modern digital solutions.
+        </p>
+        <div class="cta-actions">
+          <a href="contact-us.html" class="btn-cta-light">Apply Now</a>
+          <a href="about-us.html" class="btn-cta-outline">Know More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
       <!-- Footer Start -->
   <footer class="emx-footer">

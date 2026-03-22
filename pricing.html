@@ -1,23 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Smart Data  IT Solutions &  Services Template">
-  <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>Smart Data IT Solutions & Services Template</title>
+  <title>Pricing & Plans | Emergexians</title>
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap">
+  <meta name="description" content="Explore pricing and plans by Emergexians for website development, mobile app development, software solutions, e-commerce, AI automation, and technical support services." />
+  <meta name="keywords" content="pricing page, plans page, website development pricing, app development pricing, software development pricing, ecommerce pricing, AI automation pricing, Emergexians" />
+  <meta name="author" content="Emergexians" />
+
+  <meta property="og:title" content="Pricing & Plans | Emergexians" />
+  <meta property="og:description" content="Flexible pricing and scalable digital service plans by Emergexians." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/images/favicon/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="https://www.emergexians.com/assets/images/favicon/favicon.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
-</head>
+  <style>
+    :root {
+      --primary: #6083be;
+      --primary-dark: #31558f;
+      --primary-light: #eaf1ff;
+      --dark: #337bf8;
+      --dark-2: #337bf8;
+      --text: #475569;
+      --white: #ffffff;
+      --border: rgba(255,255,255,0.15);
+      --shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+      --radius: 22px;
+    }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background: #f8fbff;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .section-padding {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .section-subtitle {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .hero-section {
+      position: relative;
+      padding: 120px 0 90px;
+      background:
+        radial-gradient(circle at top left, rgba(96,131,190,0.20), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(49,85,143,0.18), transparent 35%),
+        linear-gradient(135deg, #071120 0%, #12233f 45%, #6083be 100%);
+      overflow: hidden;
+    }
+
+    .hero-section::before,
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 0;
+    }
+
+    .hero-section::before {
+      width: 280px;
+      height: 280px;
+      background: rgba(255,255,255,0.12);
+      top: -60px;
+      left: -80px;
+    }
+
+    .hero-section::after {
+      width: 320px;
+      height: 320px;
+      background: rgba(96,131,190,0.18);
+      right: -80px;
+      bottom: -100px;
+    }
+
+    .hero-content,
+    .hero-card-wrap {
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.16);
+      color: #fff;
+      font-size: 0.9rem;
+      margin-bottom: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-title {
+      font-size: 3.7rem;
+      line-height: 1.05;
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      color: #dbeafe;
+    }
+
+    .hero-text {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.06rem;
+      line-height: 1.9;
+      max-width: 650px;
+      margin-bottom: 32px;
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .hero-stat h4 {
+      color: #fff;
+      margin-bottom: 4px;
+      font-size: 1.8rem;
+    }
+
+    .hero-stat p {
+      margin: 0;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.95rem;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 28px;
+      padding: 24px;
+      backdrop-filter: blur(16px);
+      box-shadow: var(--shadow);
+      color: #fff;
+    }
+
+    .hero-mini-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 20px;
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+
+    .hero-mini-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .hero-mini-card i {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .hero-mini-card h5 {
+      color: #fff;
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+
+    .hero-mini-card p {
+      margin-bottom: 0;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .pricing-card,
+    .feature-box,
+    .faq-box,
+    .cta-box {
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+    }
+
+    .pricing-card {
+      position: relative;
+      padding: 32px 28px;
+      border: 1px solid rgba(96,131,190,0.10);
+      background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+      height: 100%;
+      transition: 0.35s ease;
+      overflow: hidden;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 60px rgba(49, 85, 143, 0.14);
+    }
+
+    .pricing-card.popular {
+      border: 1px solid rgba(96,131,190,0.35);
+      transform: scale(1.02);
+    }
+
+    .pricing-card.popular:hover {
+      transform: scale(1.02) translateY(-8px);
+    }
+
+    .popular-badge {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 8px 12px;
+      border-radius: 999px;
+      box-shadow: 0 10px 20px rgba(96,131,190,0.22);
+    }
+
+    .plan-icon {
+      width: 68px;
+      height: 68px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(96,131,190,0.18), rgba(49,85,143,0.12));
+      color: var(--primary-dark);
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+    }
+
+    .plan-name {
+      font-size: 1.45rem;
+      margin-bottom: 8px;
+    }
+
+    .plan-desc {
+      color: var(--text);
+      line-height: 1.75;
+      margin-bottom: 20px;
+      min-height: 55px;
+    }
+
+    .price-wrap {
+      display: flex;
+      align-items: flex-end;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .price {
+      font-family: 'Barlow', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--dark);
+      line-height: 1;
+    }
+
+    .price-note {
+      color: var(--text);
+      margin-bottom: 22px;
+      font-size: 0.94rem;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 26px;
+    }
+
+    .feature-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 14px;
+      color: var(--dark-2);
+      line-height: 1.7;
+      font-size: 0.96rem;
+    }
+
+    .feature-list li i {
+      color: var(--success);
+      margin-top: 3px;
+      font-size: 1rem;
+    }
+
+    .btn-plan {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 14px 22px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      font-weight: 700;
+      transition: 0.3s ease;
+      border: none;
+    }
+
+    .btn-plan:hover {
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 16px 30px rgba(96,131,190,0.24);
+    }
+
+    .btn-plan-outline {
+      background: transparent;
+      color: var(--primary-dark);
+      border: 1px solid rgba(96,131,190,0.24);
+    }
+
+    .btn-plan-outline:hover {
+      color: var(--primary-dark);
+      background: #eef4ff;
+      box-shadow: none;
+    }
+
+    .feature-box {
+      padding: 28px;
+      border: 1px solid rgba(96,131,190,0.08);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      height: 100%;
+    }
+
+    .feature-box i {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(96,131,190,0.18), rgba(49,85,143,0.12));
+      color: var(--primary-dark);
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+    }
+
+    .feature-box p {
+      color: var(--text);
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    .faq-box {
+      padding: 26px 24px;
+      border: 1px solid rgba(96,131,190,0.08);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+      height: 100%;
+    }
+
+    .faq-box h5 {
+      margin-bottom: 10px;
+      font-size: 1.12rem;
+    }
+
+    .faq-box p {
+      color: var(--text);
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+
+    .cta-box {
+      padding: 60px 40px;
+      background: linear-gradient(135deg, #0f172a 0%, #274171 50%, #6083be 100%);
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+      top: -60px;
+      right: -40px;
+      filter: blur(10px);
+    }
+
+    .cta-box h2 {
+      color: #fff;
+      font-size: 2.3rem;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.82);
+      max-width: 760px;
+      margin: 0 auto 28px;
+      position: relative;
+      z-index: 2;
+      line-height: 1.9;
+    }
+
+    .cta-actions {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn-cta-light {
+      background: #fff;
+      color: var(--primary-dark);
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .btn-cta-light:hover {
+      color: var(--primary-dark);
+      background: #f4f8ff;
+    }
+
+    .btn-cta-outline {
+      border: 1px solid rgba(255,255,255,0.24);
+      color: #fff;
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-weight: 600;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .btn-cta-outline:hover {
+      color: #fff;
+      background: rgba(255,255,255,0.12);
+    }
+
+    .muted-note {
+      color: var(--text);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 991px) {
+      .hero-title {
+        font-size: 2.8rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .section-padding {
+        padding: 80px 0;
+      }
+
+      .hero-card-wrap {
+        margin-top: 40px;
+      }
+
+      .pricing-card.popular,
+      .pricing-card.popular:hover {
+        transform: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero-section {
+        padding: 90px 0 70px;
+      }
+
+      .hero-title {
+        font-size: 2.2rem;
+      }
+
+      .hero-text {
+        font-size: 0.98rem;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .cta-box {
+        padding: 34px 22px;
+      }
+
+      .hero-stats {
+        gap: 18px;
+      }
+
+      .price {
+        font-size: 2.35rem;
+      }
+    }
+  </style>
+</head>
 <body>
-  <div class="wrapper">
+
+
+      <div class="wrapper">
     <div class="preloader">
       <div class="sk-cube-grid">
         <span class="sk-cube"></span>
@@ -35,7 +554,20 @@
     <!-- =========================
         Header 
     =========================== -->
-    <header class="header header-transparent">
+    <header class="header header-light header-light-has-topbar">
+      <div class="d-none d-md-block">
+        <div class="topbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <span class="topbar__text">
+                  CIN: U62020DL2024PTC436878   <span style="color: blue;">ISO Certified (ISO 9001:2015, ISO/IEC 27001:2022)</span> G.S.T: 07AAICE4126E1ZX
+                </span>
+              </div><!-- /.col-12 -->
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+        </div><!-- /.topbar -->
+      </div>
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container">
 
@@ -49,33 +581,13 @@
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
               <li class="nav__item  has-dropdown">
-                <a href="index.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Home</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="index.html" class="nav__item-link">Home Main</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-modern.html" class="nav__item-link">Home Modern</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="home-classic.html" class="nav__item-link">Home Classic</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
+                <a href="./" data-toggle="dropdown" class="nav__item-link">Home</a>
               </li><!-- /.nav-item -->
               <li class="nav__item  has-dropdown">
-                <a href="pricing.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Company</a>
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Company</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
-                    <a href="about-us.html" class="nav__item-link">About Us</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="why-us.html" class="nav__item-link">Why Choose Us</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
                     <a href="leadership-team.html" class="nav__item-link">Leadership Team</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="awards.html" class="nav__item-link">Award & Recognition</a>
                   </li><!-- /.nav-item -->
                   <li class="nav__item">
                     <a href="pricing.html" class="nav__item-link">Pricing & Plans</a>
@@ -89,53 +601,23 @@
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
               <li class="nav__item  has-dropdown">
-                <a href="pricing.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">IT Solutions</a>
-                <ul class="dropdown-menu wide-dropdown-menu">
+                <a href="it-solutions.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link">IT Solutions</a>
+                <ul class="dropdown-menu">
                   <li class="nav__item">
                     <div class="row mx-0">
                       <div class="col-sm-6 dropdown-menu-col">
-                        <a href="it-solutions.html" class="nav__item-link dropdown-menu-title">IT Solutions</a>
                         <ul class="nav flex-column">
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT
-                              Management</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/website-development.html">Website Development Services</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Cyber
-                              Security</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/mobile-app-development.html">App Development Services</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Cloud
-                              Computing</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/custom-software-development.html">Custom Software Development</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT
-                              Consulting</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/e-commerce-solutions.html">E-Commerce Solutions</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Software
-                              Dev</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/ai-&-automation-solutions.html">Ai & Automation Solutions</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT Support</a>
-                          </li>
-                          <!-- /.nav-item -->
-                        </ul>
-                      </div><!-- /.col-sm-6 -->
-                      <div class="col-sm-6 dropdown-menu-col">
-                        <a href="industries.html" class="nav__item-link dropdown-menu-title">Industries</a>
-                        <ul class="nav flex-column">
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Education,
-                              Non-Profit</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Accounting,
-                              Finance</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Government &
-                              Public</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Energy
-                              &
-                              Utilities</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="industries-single-industry.html">Legal,
-                              Law
-                              Firms</a></li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link"
-                              href="industries-single-industry.html">Manufacturing</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/technical-support-&-maintenance.html">Technical Support & Maintenance</a>
                           </li>
                           <!-- /.nav-item -->
                         </ul>
@@ -144,45 +626,8 @@
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
-                <a href="pricing.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">News&Media</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="blog.html" class="nav__item-link">Our Blog</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="blog-single-post.html" class="nav__item-link">Single Blog Post</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-grid.html" class="nav__item-link">Case Studies Grid</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-carousel.html" class="nav__item-link">Case Studies Carousel</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-classic.html" class="nav__item-link">Case Studies Classic</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="case-studies-single.html" class="nav__item-link">Single Case Study</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              <li class="nav__item  has-dropdown">
-                <a href="pricing.html#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Features</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="coming-soon.html" class="nav__item-link">Coming Soon</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="404.html" class="nav__item-link">404 Page</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="pricing.html#" class="nav__item-link  open-register-popup">Register</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="pricing.html#" class="nav__item-link  open-login-popup">Login</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
+              <li class="nav__item">
+                <a href="about-us.html" class="nav__item-link">About Us</a>
               </li><!-- /.nav-item -->
               <li class="nav__item">
                 <a href="contact-us.html" class="nav__item-link">Contacts</a>
@@ -193,428 +638,469 @@
             <li class="d-none d-xl-block">
               <a href="request-quote.html" class="btn action__btn-contact">Request A Quote</a>
             </li>
-            <li>
-              <button class="action__btn action__btn-login open-login-popup">
-                <i class="icon-user"></i><span>Login</span>
-              </button>
-            </li>
           </ul><!-- /.navbar-actions -->
         </div><!-- /.container -->
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
 
-    <!-- ========================
-       page title 
-    =========================== -->
-    <section class="page-title page-title-layout5 bg-overlay bg-overlay-gradient bg-parallax text-center">
-      <div class="bg-img"><img src="assets/images/page-titles/5.jpg" alt="background"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-3">
-            <span class="pagetitle__subheading">Nationwide Service, Local Expertise</span>
-            <h1 class="pagetitle__heading">Offering the latest software and
-              IT services to our customers!</h1>
-            <div class="d-flex justify-content-center align-items-center flex-wrap">
-              <a href="https://7oroof.com/demos/smartdata/projects-grid.html" class="btn btn__primary mx-3">Our Services</a>
-              <a class="video__btn video__btn-rounded video__btn-white popup-video mx-3"
-                href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                <div class="video__player">
-                  <i class="fa fa-play"></i>
-                </div>
-                <span class="video__btn-title color-white">Our Video!</span>
-              </a>
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 hero-content">
+          <div class="eyebrow">
+            <i class="bi bi-tags-fill"></i>
+            Flexible Pricing by Emergexians
+          </div>
+          <h1 class="hero-title">Simple Pricing Plans for <span>Growing Businesses</span></h1>
+          <p class="hero-text">
+            Choose a digital plan that matches your business stage, project size, and growth goals.
+            Emergexians offers scalable packages for websites, apps, software, e-commerce solutions,
+            AI automation, and ongoing technical support.
+          </p>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <h4>Flexible</h4>
+              <p>Plans for every stage</p>
             </div>
-          </div><!-- /.col-xl-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.page-title -->
-
-    <!-- =========================
-      Pricing  
-      =========================== -->
-    <section class="pricing pt-0">
-      <div class="container">
-        <div class="row row-no-gutter pricing-wrapper">
-          <!-- pricing item #1-->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="pricing-item d-flex flex-column justify-content-between">
-              <div>
-                <div class="pricing__top">For Small Teams</div>
-                <div class="pricing__header">
-                  <h5 class="pricing__title">Starter Plan</h5>
-                  <div class="pricing__price">
-                    <span class="pricing__currency">$</span><span>49,99</span><span
-                      class="pricing__time">/Monthly</span>
-                  </div>
-                </div><!-- /.pricing__header  -->
-                <div class="pricing__content">
-                  <p class="pricing__desc">Fast project turnaround time, substantial cost savings & quality
-                    standards.
-                  </p>
-                  <ul class="pricing__list list-items list-items-layout2 list-unstyled">
-                    <li>Five Brand Monitors</li>
-                    <li>Five Keyword Monitors</li>
-                    <li>Full Social Profiles</li>
-                  </ul>
-                </div><!-- /.pricing__content  -->
-              </div>
-              <div class="pricing__footer">
-                <a href="pricing.html#" class="btn btn__secondary btn__block btn__icon">
-                  <span>Purchase Now</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.pricing__footer  -->
-            </div><!-- /.pricing-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- pricing item #2-->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="pricing-item d-flex flex-column justify-content-between">
-              <div>
-                <div class="pricing__top">For Small And Beginning Business</div>
-                <div class="pricing__header">
-                  <h5 class="pricing__title">Basic Plan</h5>
-                  <div class="pricing__price">
-                    <span class="pricing__currency">$</span><span>79,99</span><span
-                      class="pricing__time">/Monthly</span>
-                  </div>
-                </div><!-- /.pricing__header  -->
-                <div class="pricing__content">
-                  <p class="pricing__desc">Fast project turnaround time, substantial cost savings & quality
-                    standards.
-                  </p>
-                  <ul class="pricing__list list-items list-items-layout2 list-unstyled">
-                    <li>Five Brand Monitors</li>
-                    <li>Five Keyword Monitors</li>
-                    <li>Full Social Profiles</li>
-                    <li>500 Search Results </li>
-                  </ul>
-                </div><!-- /.pricing__content  -->
-              </div>
-              <div class="pricing__footer">
-                <a href="pricing.html#" class="btn btn__primary btn__block btn__icon">
-                  <span>Purchase Now</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.pricing__footer  -->
-            </div><!-- /.pricing-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- pricing item #3-->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="pricing-item d-flex flex-column justify-content-between">
-              <div>
-                <div class="pricing__top">For Big Teams And Enterprise</div>
-                <div class="pricing__header">
-                  <h5 class="pricing__title">Advanced Plan</h5>
-                  <div class="pricing__price">
-                    <span class="pricing__currency">$</span><span>99,99</span><span
-                      class="pricing__time">/Monthly</span>
-                  </div>
-                </div><!-- /.pricing__header  -->
-                <div class="pricing__content">
-                  <p class="pricing__desc">Fast project turnaround time, substantial cost savings & quality
-                    standards.
-                  </p>
-                  <ul class="pricing__list list-items list-items-layout2 list-unstyled">
-                    <li>Five Brand Monitors</li>
-                    <li>Five Keyword Monitors</li>
-                    <li>Basic Quota </li>
-                    <li>PDF reports</li>
-                    <li>Full Social Profiles</li>
-                    <li>500 Search Results </li>
-                  </ul>
-                </div><!-- /.pricing__content  -->
-              </div>
-              <div class="pricing__footer">
-                <a href="pricing.html#" class="btn btn__secondary btn__block btn__icon">
-                  <span>Purchase Now</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.pricing__footer  -->
-            </div><!-- /.pricing-item -->
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-12">
-            <p class="text__link text-center mt-10 mb-0">Innovative and Sustainable Solutions,
-              <a href="pricing.html#" class="btn btn__link btn__secondary btn__icon px-0">
-                <span>Find Your Solution</span> <i class="icon-arrow-right"></i>
-              </a>
-            </p>
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.pricing  -->
-
-    <!-- =====================
-           Clients
-    ======================== -->
-    <section class="clients border-top pt-50 pb-50">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12">
-            <div class="slick-carousel"
-              data-slick='{"slidesToShow": 6, "arrows": false, "dots": false, "autoplay": true,"autoplaySpeed": 2000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 4}}, {"breakpoint": 767, "settings": {"slidesToShow": 3}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
-              <div class="client">
-                <img src="assets/images/clients/1.png" alt="client">
-                <img src="assets/images/clients/1.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/2.png" alt="client">
-                <img src="assets/images/clients/2.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/3.png" alt="client">
-                <img src="assets/images/clients/3.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/4.png" alt="client">
-                <img src="assets/images/clients/4.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/5.png" alt="client">
-                <img src="assets/images/clients/5.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/6.png" alt="client">
-                <img src="assets/images/clients/6.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/7.png" alt="client">
-                <img src="assets/images/clients/7.png" alt="client">
-              </div><!-- /.client -->
-            </div><!-- /.carousel -->
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.clients -->
-
-    <!-- ======================
-     Work Process 
-    ========================= -->
-    <section class="work-process pb-100">
-      <div class="bg-img"><img src="assets/images/backgrounds/14.jpg" alt="background"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-5">
-            <div class="sticky-top">
-              <div class="tab-content mb-50">
-                <div class="tab-pane fade show active" id="tab1">
-                  <img src="assets/images/work-process/1.jpg" class="rounded" alt="banner">
-                </div>
-                <div class="tab-pane fade" id="tab2">
-                  <img src="assets/images/work-process/2.jpg" class="rounded" alt="banner">
-                </div>
-                <div class="tab-pane fade" id="tab3">
-                  <img src="assets/images/work-process/3.jpg" class="rounded" alt="banner">
-                </div>
-                <div class="tab-pane fade" id="tab4">
-                  <img src="assets/images/work-process/4.jpg" class="rounded" alt="banner">
-                </div>
-              </div><!-- /.tab-content -->
-              <p class="color-white font-weight-bold fz-16 mb-30">SmartData been helping organizations throughout the
-                World to
-                manage their IT with our unique approach to technology management and consultancy solutions. </p>
-              <a href="pricing.html#" class="btn btn__white btn__white-style2 btn__icon mb-30">
-                <span>Request Demo</span>
-                <i class="icon-arrow-right"></i>
-              </a>
+            <div class="hero-stat">
+              <h4>Custom</h4>
+              <p>Tailored enterprise pricing</p>
             </div>
-          </div><!-- /.col-lg-5 -->
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1">
-            <div class="heading mb-80">
-              <h2 class="heading__subtitle">How We Works!!</h2>
-              <h3 class="heading__title color-white">Deliver Only Exceptional Quality, And Improve! </h3>
+            <div class="hero-stat">
+              <h4>Transparent</h4>
+              <p>Clear deliverables</p>
             </div>
-            <nav class="nav nav-tabs">
-              <!-- process Item #1 -->
-              <a class="process-item d-flex flex-wrap active" data-toggle="tab" href="pricing.html#tab1">
-                <div class="process-item__icon">
-                  <i class="icon-cyberspace"></i>
-                </div><!-- /.process-item__icon -->
-                <div class="process-item__content">
-                  <h4 class="process-item__title">Brainstorming</h4>
-                  <p class="process-item__desc">The first step is to take the projects data & think about to manage all
-                    aspects of your software assets including maintenance. Our skilled personnel along with a high-level
-                    look at the client’s network and suggestions for strategic direction utilising the latest processing
-                    software.</p>
-                </div>
-              </a><!-- /.process-item -->
-              <!-- process Item #2 -->
-              <a class="process-item d-flex flex-wrap" data-toggle="tab" href="pricing.html#tab2">
-                <div class="process-item__icon">
-                  <i class="icon-algorithm"></i>
-                </div><!-- /.process-item__icon -->
-                <div class="process-item__content">
-                  <h4 class="process-item__title">Concept Prototype</h4>
-                  <p class="process-item__desc">To know about the product, customers & competitors offer integral
-                    communication services software assets. Our skilled personnel, utilising the latest processing
-                    software, combined with decades of experience. Once the critical situation resolved, work on the ITA
-                    roadmap resumed.</p>
-                </div>
-              </a><!-- /.process-item -->
-              <!-- process Item #3 -->
-              <a class="process-item d-flex flex-wrap" data-toggle="tab" href="pricing.html#tab3">
-                <div class="process-item__icon">
-                  <i class="icon-programming3"></i>
-                </div><!-- /.process-item__icon -->
-                <div class="process-item__content">
-                  <h4 class="process-item__title">Design Layout</h4>
-                  <p class="process-item__desc">Start to work on the design taking with collected data, we're
-                    responsible
-                    for our process and results. Skilled personnel, utilising the latest processing software, combined
-                    with decades of experience about the product & competitors offer integral communication services.
-                  </p>
-                </div>
-              </a><!-- /.process-item -->
-              <!-- process Item #4 -->
-              <a class="process-item d-flex flex-wrap" data-toggle="tab" href="pricing.html#tab4">
-                <div class="process-item__icon">
-                  <i class="icon-browser"></i>
-                </div><!-- /.process-item__icon -->
-                <div class="process-item__content">
-                  <h4 class="process-item__title">Evaluation</h4>
-                  <p class="process-item__desc">Reach a conclusion from the investigations about product and we thank
-                    each
-                    of our great clients projects, latest software, combined with decades of experience.</p>
-                </div>
-              </a><!-- /.process-item -->
-            </nav>
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Work Process -->
+          </div>
+        </div>
 
-    <!-- ======================
-       FAQ
-    ========================= -->
-    <section class="faq pt-120 pb-70">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading text-center mb-50">
-              <h2 class="heading__subtitle">Our Pricing Features</h2>
-              <h3 class="heading__title">Frequently asked questions</h3>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row" id="accordion">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse1">
-                <a class="accordion__title" href="pricing.html#">Which Plan Is Right For Me?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse1" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse2">
-                <a class="accordion__title" href="pricing.html#">Do I have to commit to a contract?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse2" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item opened">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse3">
-                <a class="accordion__title" href="pricing.html#">What Payment Methods Are Available?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse3" class="collapse show" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse4">
-                <a class="accordion__title" href="pricing.html#">What if I pick the wrong plan?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse4" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse5">
-                <a class="accordion__title" href="pricing.html#">Any contracts or commitments?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse5" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse6">
-                <a class="accordion__title" href="pricing.html#">What are my payment options?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse6" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse7">
-                <a class="accordion__title" href="pricing.html#">How does the free trial work?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse7" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse8">
-                <a class="accordion__title" href="pricing.html#">What Payment Methods Are Available?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse8" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse9">
-                <a class="accordion__title" href="pricing.html#">How does the free trial work?</a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse9" class="collapse" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-            <div class="accordion-item opened">
-              <div class="accordion__header" data-toggle="collapse" data-target="#collapse10">
-                <a class="accordion__title" href="pricing.html#">If I have questions, where can I find answers? </a>
-              </div><!-- /.accordion-item-header -->
-              <div id="collapse10" class="collapse show" data-parent="#accordion">
-                <div class="accordion__body">
-                  <p>With any financial product that you buy, it is important that you know you are getting the best
-                    advice from a reputable company as often</p>
-                </div><!-- /.accordion-item-body -->
-              </div>
-            </div><!-- /.accordion-item -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.FAQ -->
+        <div class="col-lg-5 hero-card-wrap">
+          <div class="hero-card">
+            <div class="hero-mini-card">
+              <i class="bi bi-globe2"></i>
+              <h5>Starter to Advanced Plans</h5>
+              <p>Suitable pricing options for startups, SMEs, brands, and enterprise-scale requirements.</p>
+            </div>
+            <div class="hero-mini-card">
+              <i class="bi bi-gear-wide-connected"></i>
+              <h5>Service-Based Bundles</h5>
+              <p>Pick plans for website development, apps, software, support, and automation based on your goals.</p>
+            </div>
+            <div class="hero-mini-card">
+              <i class="bi bi-headset"></i>
+              <h5>Consultation Before Final Quote</h5>
+              <p>Final pricing can be refined based on scope, integrations, timelines, and custom feature needs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Website Development Plans</h2>
+        <p class="section-subtitle">
+          Ideal for businesses looking to establish a strong digital presence with modern design,
+          responsive layouts, and conversion-focused website architecture.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="pricing-card">
+            <div class="plan-icon"><i class="bi bi-window"></i></div>
+            <h3 class="plan-name">Starter Website</h3>
+            <p class="plan-desc">Best for small businesses and professionals who need a clean company website.</p>
+            <div class="price-wrap">
+              <div class="price">₹14,999</div>
+            </div>
+            <div class="price-note">One-time project pricing</div>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Up to 5 pages</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Responsive design</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Basic SEO setup</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Contact form integration</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Basic speed optimization</span></li>
+            </ul>
+            <a href="contact.html" class="btn-plan btn-plan-outline">Choose Starter</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="pricing-card popular">
+            <div class="popular-badge">Most Popular</div>
+            <div class="plan-icon"><i class="bi bi-globe2"></i></div>
+            <h3 class="plan-name">Business Website</h3>
+            <p class="plan-desc">Perfect for brands that want a premium look, lead generation, and more flexibility.</p>
+            <div class="price-wrap">
+              <div class="price">₹29,999</div>
+            </div>
+            <div class="price-note">One-time project pricing</div>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Up to 12 pages</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Custom UI/UX sections</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Advanced SEO-ready structure</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>WhatsApp and lead forms</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Speed and security setup</span></li>
+            </ul>
+            <a href="contact.html" class="btn-plan">Choose Business</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="pricing-card">
+            <div class="plan-icon"><i class="bi bi-stars"></i></div>
+            <h3 class="plan-name">Custom Premium</h3>
+            <p class="plan-desc">Built for advanced businesses needing custom portals, unique sections, and integrations.</p>
+            <div class="price-wrap">
+              <div class="price">Custom</div>
+            </div>
+            <div class="price-note">Based on scope and features</div>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Custom page count</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Advanced animations and UI</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Admin panel or dynamic modules</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>API or third-party integration</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Dedicated consultation</span></li>
+            </ul>
+            <a href="request-quote.html" class="btn-plan btn-plan-outline">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Mobile App Development Plans</h2>
+        <p class="section-subtitle">
+          Structured app packages for businesses launching customer apps, service platforms,
+          booking systems, delivery apps, and internal mobile tools.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="pricing-card">
+            <div class="plan-icon"><i class="bi bi-phone"></i></div>
+            <h3 class="plan-name">Basic App</h3>
+            <p class="plan-desc">Suitable for MVP apps, simple customer apps, or basic utility applications.</p>
+            <div class="price-wrap">
+              <div class="price">₹49,999</div>
+            </div>
+            <div class="price-note">Starting project price</div>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Basic UI screens</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Android or Flutter option</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Login and profile setup</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Basic API integration</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Deployment support</span></li>
+            </ul>
+            <a href="contact.html" class="btn-plan btn-plan-outline">Choose Basic</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="pricing-card popular">
+            <div class="popular-badge">Best Value</div>
+            <div class="plan-icon"><i class="bi bi-phone-vibrate"></i></div>
+            <h3 class="plan-name">Business App</h3>
+            <p class="plan-desc">Great for service apps, booking apps, e-commerce apps, and business workflows.</p>
+            <div class="price-wrap">
+              <div class="price">₹99,999</div>
+            </div>
+            <div class="price-note">Starting project price</div>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Custom UI/UX</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Android + iOS cross-platform</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Dashboard integration</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Push notification setup</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Testing and publishing guidance</span></li>
+            </ul>
+            <a href="contact.html" class="btn-plan">Choose Business</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="pricing-card">
+            <div class="plan-icon"><i class="bi bi-grid-1x2-fill"></i></div>
+            <h3 class="plan-name">Advanced App</h3>
+            <p class="plan-desc">For multi-role apps, real-time systems, custom workflows, and deeper business logic.</p>
+            <div class="price-wrap">
+              <div class="price">Custom</div>
+            </div>
+            <div class="price-note">Based on scope and complexity</div>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Advanced feature set</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Role-based access flow</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Live location or real-time modules</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Payment and external APIs</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Custom support plan</span></li>
+            </ul>
+            <a href="request-quote.html" class="btn-plan btn-plan-outline">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Software & E-Commerce Plans</h2>
+        <p class="section-subtitle">
+          Built for companies that need custom business systems, CRM tools, admin dashboards,
+          ERP workflows, online stores, and scalable commerce infrastructure.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="pricing-card">
+            <div class="plan-icon"><i class="bi bi-window-stack"></i></div>
+            <h3 class="plan-name">Software Starter</h3>
+            <p class="plan-desc">Suitable for small internal tools, admin panels, and simple business automation systems.</p>
+            <div class="price-wrap">
+              <div class="price">₹79,999</div>
+            </div>
+            <div class="price-note">Starting project price</div>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Basic admin dashboard</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>User and role management</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Core workflow modules</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Database setup</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Basic reporting</span></li>
+            </ul>
+            <a href="contact.html" class="btn-plan btn-plan-outline">Choose Starter</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="pricing-card popular">
+            <div class="popular-badge">Recommended</div>
+            <div class="plan-icon"><i class="bi bi-cart-check-fill"></i></div>
+            <h3 class="plan-name">E-Commerce Business</h3>
+            <p class="plan-desc">Best for product-selling businesses that need a modern online store with backend controls.</p>
+            <div class="price-wrap">
+              <div class="price">₹39,999</div>
+            </div>
+            <div class="price-note">Starting project price</div>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Product catalog and categories</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Cart and checkout flow</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Payment gateway integration</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Order management panel</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Responsive shopping experience</span></li>
+            </ul>
+            <a href="contact.html" class="btn-plan">Choose E-Commerce</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="pricing-card">
+            <div class="plan-icon"><i class="bi bi-building-fill-gear"></i></div>
+            <h3 class="plan-name">Enterprise Custom</h3>
+            <p class="plan-desc">For CRM, ERP, SaaS, multi-vendor platforms, and advanced business systems.</p>
+            <div class="price-wrap">
+              <div class="price">Custom</div>
+            </div>
+            <div class="price-note">Tailored after consultation</div>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Custom modules and workflows</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>API and third-party integrations</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Scalable architecture</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Multi-user or multi-role setup</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Dedicated planning session</span></li>
+            </ul>
+            <a href="request-quote.html" class="btn-plan btn-plan-outline">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">AI Automation & Support Plans</h2>
+        <p class="section-subtitle">
+          Flexible packages for businesses that want smart automation, AI chatbot integration,
+          maintenance coverage, technical support, and long-term digital stability.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="pricing-card">
+            <div class="plan-icon"><i class="bi bi-robot"></i></div>
+            <h3 class="plan-name">AI Starter</h3>
+            <p class="plan-desc">Good for basic chatbot flows, lead automation, and simple workflow triggers.</p>
+            <div class="price-wrap">
+              <div class="price">₹24,999</div>
+            </div>
+            <div class="price-note">Starting project price</div>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Basic AI chatbot setup</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Website or WhatsApp flow</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Lead capture automation</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Basic trigger logic</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Deployment assistance</span></li>
+            </ul>
+            <a href="contact.html" class="btn-plan btn-plan-outline">Choose AI Starter</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="pricing-card popular">
+            <div class="popular-badge">Monthly Plan</div>
+            <div class="plan-icon"><i class="bi bi-headset"></i></div>
+            <h3 class="plan-name">Support & Maintenance</h3>
+            <p class="plan-desc">Best for businesses needing regular updates, monitoring, fixes, and performance care.</p>
+            <div class="price-wrap">
+              <div class="price">₹7,999</div>
+              <div class="text-muted fw-semibold">/month</div>
+            </div>
+            <div class="price-note">Ongoing monthly support pricing</div>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Bug fixes and issue resolution</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Basic monitoring and maintenance</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Content or minor update support</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Performance checks</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Priority response support</span></li>
+            </ul>
+            <a href="contact.html" class="btn-plan">Choose Support Plan</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="pricing-card">
+            <div class="plan-icon"><i class="bi bi-cpu-fill"></i></div>
+            <h3 class="plan-name">Advanced Automation</h3>
+            <p class="plan-desc">For custom integrations, multi-step automations, advanced chatbot logic, and operations workflows.</p>
+            <div class="price-wrap">
+              <div class="price">Custom</div>
+            </div>
+            <div class="price-note">Based on workflow complexity</div>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Advanced workflow automation</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>CRM or software integration</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Multi-channel automation</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Custom business logic</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Strategy and consultation support</span></li>
+            </ul>
+            <a href="request-quote.html" class="btn-plan btn-plan-outline">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Why Our Pricing Works Better</h2>
+        <p class="section-subtitle">
+          We focus on practical plans, clear deliverables, and scalable engagement models
+          so you can invest in digital growth with more confidence.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3">
+          <div class="feature-box">
+            <i class="bi bi-sliders2"></i>
+            <h5>Flexible Scope</h5>
+            <p>Choose a starter plan or move to a custom build based on business size, requirements, and growth stage.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="feature-box">
+            <i class="bi bi-eye-fill"></i>
+            <h5>Transparent Deliverables</h5>
+            <p>Every package is structured around what you actually receive, helping you compare value more clearly.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="feature-box">
+            <i class="bi bi-arrows-angle-expand"></i>
+            <h5>Scalable Engagement</h5>
+            <p>As your needs grow, your plan can expand with more features, integrations, support, and advanced modules.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3">
+          <div class="feature-box">
+            <i class="bi bi-people-fill"></i>
+            <h5>Consultation-Led Approach</h5>
+            <p>We refine the final scope through discussion so the plan fits your business rather than forcing a fixed box.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Common questions about pricing, timelines, customization, and support.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="faq-box">
+            <h5>Are these final prices?</h5>
+            <p>No. These are standard starting plans. Final pricing can vary depending on features, timeline, integrations, design depth, and custom requirements.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="faq-box">
+            <h5>Can I customize a package?</h5>
+            <p>Yes. Every plan can be adjusted based on your project goals. We also provide fully custom enterprise quotations for advanced needs.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="faq-box">
+            <h5>Do you offer maintenance after project completion?</h5>
+            <p>Yes. We offer monthly technical support and maintenance plans for websites, apps, software, and digital systems.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="faq-box">
+            <h5>Do you provide consultation before project start?</h5>
+            <p>Yes. We discuss your goals, scope, and technical requirements first, then recommend the most suitable plan or custom proposal.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <p class="muted-note">
+          Prices shown above are sample commercial plans for presentation. You can update them anytime as per your actual business pricing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Need a Custom Proposal for Your Project?</h2>
+        <p>
+          Whether you need a business website, mobile app, custom software, e-commerce platform,
+          AI automation setup, or long-term technical support, Emergexians can prepare a plan
+          tailored to your business requirements and budget.
+        </p>
+        <div class="cta-actions">
+          <a href="contact-us.html" class="btn-cta-light">Get Free Consultation</a>
+          <a href="about-us.html" class="btn-cta-outline">Know More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
       <!-- Footer Start -->
   <footer class="emx-footer">
