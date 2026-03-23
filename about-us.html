@@ -1,91 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Emergexians | Website, App, Software & Digital Solutions Company</title>
 
-<title>About Emergexians Infotech Pvt. Ltd. | IT Company in Delhi, Lucknow & India</title>
+  <meta name="description" content="Learn about Emergexians Infotech Private Limited, a modern IT company delivering website development, mobile app development, software solutions, e-commerce platforms, AI automation, and technical support services." />
+  <meta name="keywords" content="About Emergexians, Emergexians company, website development company, app development company, software company, ecommerce development, AI automation company, IT company India" />
+  <meta name="author" content="Emergexians Infotech Private Limited" />
+  <meta name="robots" content="index, follow" />
 
-<meta name="title" content="About Emergexians Infotech Pvt. Ltd. | IT Company in India" />
-<meta name="description" content="Learn about Emergexians Infotech Pvt. Ltd., a leading IT company in Delhi and Lucknow offering website development, software, CRM, SaaS, and digital solutions across India." />
+  <meta property="og:title" content="About Emergexians" />
+  <meta property="og:description" content="Discover Emergexians Infotech Private Limited, our vision, mission, values, and digital service expertise." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.emergexians.com/about.html" />
+  <meta property="og:image" content="https://www.emergexians.com/assets/images/og-image.jpg" />
 
-<meta name="keywords" content="about emergexians, IT company Delhi, IT company Lucknow, software company India, website development company India, CRM development company, SaaS company India, custom software company" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Emergexians" />
+  <meta name="twitter:description" content="Explore the story, mission, and services of Emergexians." />
+  <link rel="canonical" href="https://emergexians.com/about-us.html" />
+  <link rel="icon" href="assets/images/favicon/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="https://www.emergexians.com/assets/images/favicon/favicon.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/libraries.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Emergexians Infotech Private Limited",
+    "url": "https://www.emergexians.com",
+    "logo": "https://www.emergexians.com/assets/images/logo.png",
+    "description": "Emergexians provides website development, mobile app development, custom software, e-commerce, AI automation, and technical support services.",
+    "sameAs": [
+      "https://www.instagram.com/",
+      "https://www.linkedin.com/"
+    ]
+  }
+  </script>
 
-<meta name="author" content="Emergexians Infotech Pvt. Ltd." />
+  <style>
+    :root {
+      --primary: #6083be;
+      --primary-dark: #31558f;
+      --primary-light: #eaf1ff;
+      --dark: #337bf8;
+      --dark-2: #337bf8;
+      --text: #475569;
+      --white: #ffffff;
+      --border: rgba(255,255,255,0.15);
+      --shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+      --radius: 22px;
+    }
 
-<meta name="robots" content="index, follow" />
-<meta name="language" content="English" />
-<meta name="revisit-after" content="7 days" />
-<meta name="distribution" content="global" />
-<meta name="rating" content="general" />
+    * {
+      box-sizing: border-box;
+    }
 
-<link rel="canonical" href="https://www.emergexians.com/about-us.html" />
+    html {
+      scroll-behavior: smooth;
+    }
 
-<!-- Open Graph (Facebook / LinkedIn) -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="About Emergexians Infotech Pvt. Ltd." />
-<meta property="og:description" content="Discover Emergexians – a modern IT company delivering websites, CRM, SaaS, and software solutions across India." />
-<meta property="og:url" content="https://www.emergexians.com/about-us.html" />
-<meta property="og:site_name" content="Emergexians" />
-<meta property="og:image" content="https://www.emergexians.com/assets/images/og/about.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="About Emergexians Infotech Pvt. Ltd." />
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700;
+      color: var(--dark);
+    }
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="About Emergexians Infotech Pvt. Ltd." />
-<meta name="twitter:description" content="Learn about Emergexians, a leading IT and software development company in India." />
-<meta name="twitter:image" content="https://www.emergexians.com/assets/images/og/about.jpg" />
+    a {
+      text-decoration: none;
+    }
 
-<!-- Theme Color -->
-<meta name="theme-color" content="#6083be" />
+    .section-padding {
+      padding: 100px 0;
+    }
 
-<!-- Favicon -->
-<link href="assets/images/favicon/favicon.png" rel="icon">
-<link rel="apple-touch-icon" href="https://www.emergexians.com/assets/images/favicon/favicon.png" />
+    .section-title {
+      font-size: 2.45rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
 
-<!-- Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&family=Roboto:wght@400;700&display=swap">
+    .section-subtitle {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.85;
+    }
 
-<!-- Icons -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    .hero-section {
+      position: relative;
+      padding: 120px 0 95px;
+      background:
+        radial-gradient(circle at top left, rgba(96,131,190,0.20), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(49,85,143,0.18), transparent 35%),
+        linear-gradient(135deg, #071120 0%, #12233f 45%, #6083be 100%);
+      overflow: hidden;
+    }
 
-<!-- Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    .hero-section::before,
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(90px);
+      z-index: 0;
+    }
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="assets/css/libraries.css">
-<link rel="stylesheet" href="assets/css/style.css">
+    .hero-section::before {
+      width: 280px;
+      height: 280px;
+      background: rgba(255,255,255,0.10);
+      top: -60px;
+      left: -80px;
+    }
 
-<!-- Schema Markup (VERY IMPORTANT FOR GOOGLE) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Emergexians Infotech Pvt. Ltd.",
-  "url": "https://www.emergexians.com",
-  "logo": "https://www.emergexians.com/assets/images/logo/logo-dark.png",
-  "description": "Emergexians Infotech Pvt. Ltd. is a modern IT company providing website development, CRM, SaaS, and custom software solutions in Delhi, Lucknow, and across India.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Delhi",
-    "addressCountry": "India"
-  },
-  "sameAs": [
-    "https://www.linkedin.com/",
-    "https://www.instagram.com/",
-    "https://www.facebook.com/"
-  ]
-}
-</script>
+    .hero-section::after {
+      width: 320px;
+      height: 320px;
+      background: rgba(96,131,190,0.18);
+      right: -80px;
+      bottom: -110px;
+    }
+
+    .hero-content,
+    .hero-visual {
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.16);
+      color: #fff;
+      font-size: 0.9rem;
+      margin-bottom: 22px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-title {
+      font-size: 3.85rem;
+      line-height: 1.05;
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      color: #dbeafe;
+    }
+
+    .hero-text {
+      color: rgba(255,255,255,0.84);
+      font-size: 1.05rem;
+      line-height: 1.95;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 34px;
+    }
+
+    .btn-main {
+      background: #fff;
+      color: var(--primary-dark);
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      box-shadow: 0 10px 30px rgba(255,255,255,0.12);
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-main:hover {
+      color: var(--primary-dark);
+      background: #f5f9ff;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-light-custom {
+      padding: 13px 24px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.24);
+      color: #fff;
+      font-weight: 600;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      transition: 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn-outline-light-custom:hover {
+      color: #fff;
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-2px);
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .hero-stat h4 {
+      color: #fff;
+      margin-bottom: 4px;
+      font-size: 1.85rem;
+    }
+
+    .hero-stat p {
+      margin: 0;
+      color: rgba(255,255,255,0.74);
+      font-size: 0.94rem;
+    }
+
+    .glass-card {
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 28px;
+      padding: 24px;
+      backdrop-filter: blur(16px);
+      box-shadow: var(--shadow);
+      color: #fff;
+    }
+
+    .glass-mini {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .glass-mini:last-child {
+      margin-bottom: 0;
+    }
+
+    .glass-mini i {
+      font-size: 1.45rem;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .glass-mini h5 {
+      color: #fff;
+      margin-bottom: 8px;
+      font-size: 1.08rem;
+    }
+
+    .glass-mini p {
+      margin: 0;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.75;
+      font-size: 0.94rem;
+    }
+
+    .content-card,
+    .story-card,
+    .stat-card,
+    .service-card,
+    .value-card,
+    .why-card,
+    .cta-box {
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.86);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+    }
+
+    .content-card,
+    .story-card,
+    .stat-card,
+    .service-card,
+    .value-card,
+    .why-card {
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    }
+
+    .content-card,
+    .story-card {
+      padding: 36px;
+      height: 100%;
+    }
+
+    .content-card p,
+    .story-card p,
+    .service-card p,
+    .value-card p,
+    .why-card p {
+      color: var(--text);
+      line-height: 1.9;
+      margin-bottom: 0;
+    }
+
+    .content-card ul {
+      padding-left: 18px;
+      margin: 18px 0 0;
+      color: var(--text);
+    }
+
+    .content-card ul li {
+      margin-bottom: 10px;
+      line-height: 1.8;
+    }
+
+    .badge-soft {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 8px 14px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+
+    .founder-quote {
+      margin-top: 20px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--primary);
+      background: #f5f9ff;
+      border-radius: 12px;
+      color: var(--dark-2);
+      font-weight: 500;
+      line-height: 1.8;
+    }
+
+    .stat-card {
+      padding: 28px;
+      text-align: center;
+      height: 100%;
+      transition: 0.35s ease;
+    }
+
+    .stat-card:hover,
+    .service-card:hover,
+    .value-card:hover,
+    .why-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 60px rgba(49,85,143,0.14);
+    }
+
+    .stat-number {
+      font-family: 'Barlow', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .stat-label {
+      color: var(--text);
+      font-weight: 600;
+      line-height: 1.7;
+    }
+
+    .service-card,
+    .value-card,
+    .why-card {
+      padding: 28px;
+      height: 100%;
+      transition: 0.35s ease;
+    }
+
+    .icon-box {
+      width: 62px;
+      height: 62px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(96,131,190,0.18), rgba(49,85,143,0.12));
+      color: var(--primary-dark);
+      font-size: 1.45rem;
+      margin-bottom: 18px;
+    }
+
+    .cta-box {
+      padding: 60px 40px;
+      background: linear-gradient(135deg, #0f172a 0%, #274171 50%, #6083be 100%);
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-box::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+      top: -70px;
+      right: -40px;
+      filter: blur(10px);
+    }
+
+    .cta-box h2 {
+      color: #fff;
+      font-size: 2.25rem;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.82);
+      max-width: 760px;
+      margin: 0 auto 26px;
+      position: relative;
+      z-index: 2;
+      line-height: 1.95;
+    }
+
+    .cta-actions {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn-cta-light,
+    .btn-cta-outline {
+      padding: 13px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .btn-cta-light {
+      background: #fff;
+      color: var(--primary-dark);
+    }
+
+    .btn-cta-light:hover {
+      color: var(--primary-dark);
+      background: #f4f8ff;
+    }
+
+    .btn-cta-outline {
+      border: 1px solid rgba(255,255,255,0.24);
+      color: #fff;
+      background: rgba(255,255,255,0.06);
+    }
+
+    .btn-cta-outline:hover {
+      color: #fff;
+      background: rgba(255,255,255,0.12);
+    }
+
+    @media (max-width: 991px) {
+      .hero-title {
+        font-size: 2.9rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .section-padding {
+        padding: 80px 0;
+      }
+
+      .hero-visual {
+        margin-top: 24px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero-section {
+        padding: 90px 0 70px;
+      }
+
+      .hero-title {
+        font-size: 2.2rem;
+      }
+
+      .hero-text {
+        font-size: 0.98rem;
+      }
+
+      .section-title {
+        font-size: 1.75rem;
+      }
+
+      .content-card,
+      .story-card,
+      .service-card,
+      .value-card,
+      .why-card,
+      .cta-box {
+        padding: 24px 18px;
+      }
+
+      .hero-stats {
+        gap: 18px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <div class="wrapper">
+
+      <div class="wrapper">
     <div class="preloader">
       <div class="sk-cube-grid">
         <span class="sk-cube"></span>
@@ -103,7 +538,7 @@
     <!-- =========================
         Header 
     =========================== -->
-    <header class="header header-transparent">
+    <header class="header header-light header-light-has-topbar">
       <div class="d-none d-md-block">
         <div class="topbar">
           <div class="container">
@@ -120,7 +555,7 @@
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container">
 
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="https://emergexians.com/">
             <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
             <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
           </a>
@@ -133,7 +568,7 @@
                 <a href="https://emergexians.com/" data-toggle="dropdown" class="nav__item-link">Home</a>
               </li><!-- /.nav-item -->
               <li class="nav__item  has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Company</a>
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Company</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
                     <a href="leadership-team.html" class="nav__item-link">Leadership Team</a>
@@ -156,15 +591,17 @@
                     <div class="row mx-0">
                       <div class="col-sm-6 dropdown-menu-col">
                         <ul class="nav flex-column">
-                          <li class="nav__item"><a class="nav__item-link" href="solutions/website_development.html">Website Development</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/website-development.html">Website Development Services</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">App Development</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/mobile-app-development.html">App Development Services</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">Software Development</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/custom-software-development.html">Custom Software Development</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">ERPs & CRM</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/e-commerce-solutions.html">E-Commerce Solutions</a>
                           </li> <!-- /.nav-item -->
-                          <li class="nav__item"><a class="nav__item-link" href="it-solutions-single.html">IT Support</a>
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/ai-&-automation-solutions.html">Ai & Automation Solutions</a>
+                          </li> <!-- /.nav-item -->
+                          <li class="nav__item"><a class="nav__item-link" href="solutions/technical-support-&-maintenance.html">Technical Support & Maintenance</a>
                           </li>
                           <!-- /.nav-item -->
                         </ul>
@@ -174,7 +611,7 @@
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
               <li class="nav__item">
-                <a href="about-us.html" class="nav__item-link active">About Us</a>
+                <a href="about-us.html" class="nav__item-link">About Us</a>
               </li><!-- /.nav-item -->
               <li class="nav__item">
                 <a href="contact-us.html" class="nav__item-link">Contacts</a>
@@ -190,681 +627,375 @@
       </nav><!-- /.navabr -->
     </header><!-- /.Header -->
 
-    <!-- ========================
-       page title 
-    =========================== -->
-    <section class="page-title page-title-layout1 text-center bg-overlay bg-overlay-gradient bg-parallax">
-      <div class="bg-img"><img src="assets/images/page-titles/1.jpg" alt="background"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-3">
-            <h1 class="pagetitle__heading">Help Challenge Critical Activities</h1>
-            <p class="pagetitle__desc">We are experienced professionals who understand that It services is changing, and
-              are true partners who care about your success.</p>
-            <div class="d-flex justify-content-center align-items-center flex-wrap">
-              <a href="it-solutions.html" class="btn btn__primary mx-3">Our Services</a>
-              <a class="video__btn video__btn-rounded video__btn-white popup-video mx-3"
-                href="#">
-                <div class="video__player">
-                  <i class="fa fa-play"></i>
-                </div>
-                <span class="video__btn-title color-white">Our Video!</span>
-              </a>
-            </div>
-          </div><!-- /.col-xl-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.page-title -->
-
-    <!-- ========================
-      About Layout 1
-    =========================== -->
-    <section class="about-layout1">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="heading mb-30">
-              <div class="d-flex align-items-center mb-20">
-                <div class="divider divider-primary mr-30"></div>
-                <h2 class="heading__subtitle mb-0">Timely Service Delivery & Incident Resolutions!! </h2>
-              </div>
-              <h3 class="heading__title mb-40">Manages service delivery across various business like, HR, Legal and
-                other IT departments!!
-              </h3>
-            </div><!-- /heading -->
-            <div class="position-relative offset-xl-1">
-              <i class="icon-quote"></i>
-              <p class="mb-40">Emergexians has been helping organizations throughout the World to manage
-                their IT with our unique approach to technology management and consultancy solutions with appropriate
-                view and permissions to requests, problems, changes, contracts, assets..</p>
-              <ul class="list-items list-items-layout2 list-unstyled d-flex flex-wrap list-horizontal mb-50">
-                <li>Eliminate Repeat Entry</li>
-                <li>Simplify Communication</li>
-                <li>Drive Business Process</li>
-                <li>Speed Up Transactions</li>
-                <li>Structure Data & Docs</li>
-                <li>Automate Workflows</li>
-              </ul>
-              <img src="assets/images/about/singnture.png" alt="singnture">
-            </div>
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-5 offset-lg-1">
-            <div class="about__img mb-40">
-              <img src="assets/images/about/1.png" alt="about">
-              <blockquote class="blockquote d-flex align-items-end mb-0">
-                <div class="blockquote__avatar">
-                  <img src="assets/images/testimonials/thumbs/1.png" alt="thumb">
-                </div>
-                <div class="blockquote__content">
-                  <h4 class="blockquote__title mb-0">As one of the world's largest ITService Providers with over 120
-                    engineers and IT support staff are ready to help.
-                  </h4>
-                </div><!-- /.blockquote__content -->
-              </blockquote><!-- /.blockquote -->
-            </div><!-- /.about-img -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.About Layout 1 -->
-
-    <!-- ======================
-    History Timeline
-    ========================= -->
-    <section class="history-timeline pb-0">
-      <div class="history-timeline-bg">
-        <div class="bg-img"><img src="assets/images/backgrounds/1.jpg" alt="background"></div>
-      </div>
-      <div class="container">
-        <div class="row heading mb-50">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="d-flex align-items-center mb-20">
-              <div class="divider divider-primary mr-30"></div>
-              <h2 class="heading__subtitle mb-0">Explore Our Great History!!</h2>
-            </div>
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <h3 class="heading__title color-white">One of the India's largest IT Providers since 2024.</h3>
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-      <div class="position-relative">
-        <div class="timeline-bar">
-          <div class="container d-flex">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-          </div><!-- /.container -->
-        </div><!-- /.timeline-bar -->
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="timeline-carousel-wrapper mb-70">
-                <div class="slick-carousel carousel-arrows-light"
-                  data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "arrows": true, "dots": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 1}}, {"breakpoint": 768, "settings": {"slidesToShow": 1}}, {"breakpoint": 570, "settings": {"slidesToShow": 1}}]}'>
-                  <div class="carousel-block">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #1 -->
-                        <div class="timeline-item row align-items-end">
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/1.jpg" alt="timeline">
-                          </div>
-                          <div class="timeline__content col-sm-6">
-                            <p class="timeline__desc">Expanded services into custom software development and CRM solutions. Worked with multiple startups and SMEs across Delhi and nearby regions
-                            </p>
-                            <h4 class="timeline__year mb-0">2025 - Growth & Service Expansion</h4>
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #2 -->
-                        <div class="timeline-item row align-items-end">
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/2.jpg" alt="timeline">
-                          </div>
-                          <div class="timeline__content col-sm-6">
-                            <p class="timeline__desc">Aiming to scale into a full SaaS-first technology company. Building Emergexians into a recognized tech brand in India’s digital ecosystem.
-                            </p>
-                            <h4 class="timeline__year mb-0">2027 - Scaling & Innovation Roadmap (Projected) </h4>
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #3 -->
-                        <div class="timeline-item row">
-                          <div class="timeline__content col-sm-6">
-                            <h4 class="timeline__year">2024 - Foundation & Vision</h4>
-                            <p class="timeline__desc">Established Emergexians Infotech Pvt. Ltd. with a vision to deliver scalable digital solutions. Started operations with core services in website development and IT support.
-                            </p>
-                          </div>
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/3.jpg" alt="timeline">
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #4 -->
-                        <div class="timeline-item row">
-                          <div class="timeline__content col-sm-6">
-                            <h4 class="timeline__year">2026 - SaaS Platforms & Ecosystem Expansion</h4>
-                            <p class="timeline__desc">Transitioned from service-based work to product-driven architecture. Built expertise in multi-tenant SaaS systems and recurring revenue models
-</p>
-                          </div>
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/4.jpg" alt="timeline">
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                    </div><!-- /.row -->
-                  </div><!-- /.carousel-block -->
-                  <div class="carousel-block">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #1 -->
-                        <div class="timeline-item row">
-                          <div class="timeline__content col-sm-6">
-                            <h4 class="timeline__year">2024 - Foundation & Vision</h4>
-                            <p class="timeline__desc">Established Emergexians Infotech Pvt. Ltd. with a vision to deliver scalable digital solutions. Started operations with core services in website development and IT support.
-                            </p>
-                          </div>
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/3.jpg" alt="timeline">
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #2 -->
-                        <div class="timeline-item row">
-                          <div class="timeline__content col-sm-6">
-                            <h4 class="timeline__year">2026 - SaaS Platforms & Ecosystem Expansion</h4>
-                            <p class="timeline__desc">Transitioned from service-based work to product-driven architecture. Built expertise in multi-tenant SaaS systems and recurring revenue models
-                            </p>
-                          </div>
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/4.jpg" alt="timeline">
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #3 -->
-                        <div class="timeline-item row align-items-end">
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/1.jpg" alt="timeline">
-                          </div>
-                          <div class="timeline__content col-sm-6">
-                            <p class="timeline__desc">Expanded services into custom software development and CRM solutions. Worked with multiple startups and SMEs across Delhi and nearby regions
-                            </p>
-                            <h4 class="timeline__year mb-0">2025 - Growth & Service Expansion</h4>
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                      <div class="col-sm-12 col-md-12 col-lg-6">
-                        <!-- timeline Item #4 -->
-                        <div class="timeline-item row align-items-end">
-                          <div class="timeline__img col-sm-6">
-                            <img src="assets/images/timeline/2.jpg" alt="timeline">
-                          </div>
-                          <div class="timeline__content col-sm-6">
-                            <p class="timeline__desc">Aiming to scale into a full SaaS-first technology company. Building Emergexians into a recognized tech brand in India’s digital ecosystem.
-                            </p>
-                            <h4 class="timeline__year mb-0">2027 - Scaling & Innovation Roadmap (Projected)</h4>
-                          </div>
-                        </div><!-- /.timeline-item -->
-                      </div><!-- /.col-lg-6 -->
-                    </div><!-- /.row -->
-                  </div><!-- /.carousel-block -->
-                </div><!-- /.carousel -->
-              </div>
-            </div><!-- /.col-12 -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 d-flex flex-column justify-content-between">
-            <div class="row row-no-gutter read-note">
-              <div class="col-sm-4">
-                <div class="rating mb-10">
-                  <i class="fas fa-star color-primary"></i>
-                  <i class="fas fa-star color-primary"></i>
-                  <i class="fas fa-star color-primary"></i>
-                  <i class="fas fa-star color-primary"></i>
-                  <i class="fas fa-star color-primary"></i>
-                </div>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-sm-8">
-                <p class="read-note__text color-white">
-                  <span class="font-weight-bold text-underlined">99.9% Customer Satisfaction</span>
-                  based on 750+ reviews and 20,000 Objective Resource
-                </p>
-              </div><!-- /.col-lg-8 -->
-            </div><!-- /.row -->
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-                <p class="mb-30 font-weight-bold sub__desc">As one of the world's largest ITService Providers with over
-                  08+
-                  engineers and IT support staff are ready to help.</p>
-                <a href="request-quote.html" class="btn btn__primary btn__bordered btn__icon mb-30">
-                  <span>Request Quote</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.col-sm-6 -->
-              <div class="col-sm-12 col-md-6">
-                <ul class="list-items list-unstyled mb-30">
-                  <li>450+ client’s interactions </li>
-                  <li>Help challenge critical activities</li>
-                  <li>Simplify & Automate Workflows</li>
-                  <li>Peer perspectives and advice</li>
-                </ul>
-              </div><!-- /.col-sm-6 -->
-            </div><!-- /.row -->
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <img src="assets/images/banners/3.jpg" alt="banner">
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.History Timeline -->
-
-    <!-- ======================
-    Testimonials 
-    ========================= -->
-    <section class="testimonials pb-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <img src="assets/images/backgrounds/map.png" alt="map">
-            <!-- Testimonial #1 -->
-            <div class="testimonial-box">
-              <div class="testimonial__thumb">
-                <img src="assets/images/testimonials/thumbs/1.png" alt="author thumb">
-                <span class="pulsing-animation pulsing-animation-1"></span>
-                <span class="pulsing-animation pulsing-animation-2"></span>
-                <span class="pulsing-animation pulsing-animation-3"></span>
-              </div><!-- /.testimonial-thumb -->
-              <div class="testimonial__panel">
-                <div class="testimonial__desc">
-                  As one of the world's largest ITService Providers with over 120 engineers and IT support staff are
-                  ready to help.
-                </div>
-              </div><!-- /.testimonial-panel -->
-            </div><!-- /. testimonial-box -->
-            <!-- Testimonial #2 -->
-            <div class="testimonial-box">
-              <div class="testimonial__thumb">
-                <img src="assets/images/testimonials/thumbs/2.png" alt="author thumb">
-                <span class="pulsing-animation pulsing-animation-1"></span>
-                <span class="pulsing-animation pulsing-animation-2"></span>
-                <span class="pulsing-animation pulsing-animation-3"></span>
-              </div><!-- /.testimonial-thumb -->
-              <div class="testimonial__panel">
-                <div class="testimonial__desc">
-                  As one of the world's largest ITService Providers with over 120 engineers and IT support staff are
-                  ready to help.
-                </div>
-              </div><!-- /.testimonial-panel -->
-            </div><!-- /. testimonial-box -->
-            <!-- Testimonial #3 -->
-            <div class="testimonial-box">
-              <div class="testimonial__thumb">
-                <img src="assets/images/testimonials/thumbs/3.png" alt="author thumb">
-                <span class="pulsing-animation pulsing-animation-1"></span>
-                <span class="pulsing-animation pulsing-animation-2"></span>
-                <span class="pulsing-animation pulsing-animation-3"></span>
-              </div><!-- /.testimonial-thumb -->
-              <div class="testimonial__panel">
-                <div class="testimonial__desc">
-                  As one of the world's largest ITService Providers with over 120 engineers and IT support staff are
-                  ready to help.
-                </div>
-              </div><!-- /.testimonial-panel -->
-            </div><!-- /. testimonial-box -->
-            <!-- Testimonial #4 -->
-            <div class="testimonial-box testimonial-hover-left">
-              <div class="testimonial__thumb">
-                <img src="assets/images/testimonials/thumbs/4.png" alt="author thumb">
-                <span class="pulsing-animation pulsing-animation-1"></span>
-                <span class="pulsing-animation pulsing-animation-2"></span>
-                <span class="pulsing-animation pulsing-animation-3"></span>
-              </div><!-- /.testimonial-thumb -->
-              <div class="testimonial__panel">
-                <div class="testimonial__desc">
-                  As one of the world's largest ITService Providers with over 120 engineers and IT support staff are
-                  ready to help.
-                </div>
-              </div><!-- /.testimonial-panel -->
-            </div><!-- /. testimonial-box -->
-            <!-- Testimonial #5 -->
-            <div class="testimonial-box testimonial-hover-left">
-              <div class="testimonial__thumb">
-                <img src="assets/images/testimonials/thumbs/5.png" alt="author thumb">
-                <span class="pulsing-animation pulsing-animation-1"></span>
-                <span class="pulsing-animation pulsing-animation-2"></span>
-                <span class="pulsing-animation pulsing-animation-3"></span>
-              </div><!-- /.testimonial-thumb -->
-              <div class="testimonial__panel">
-                <div class="testimonial__desc">
-                  As one of the world's largest ITService Providers with over 120 engineers and IT support staff are
-                  ready to help.
-                </div>
-              </div><!-- /.testimonial-panel -->
-            </div><!-- /. testimonial-box -->
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-      <div class="pb-100">
-        <div class="bg-img"><img src="assets/images/backgrounds/2.jpg" alt="background"></div>
-        <div class="container">
-          <div class="cta d-flex align-items-center">
-            <div class="cta__item d-flex align-items-center">
-              <div class="cta__icon">
-                <i class="icon-programmer"></i>
-              </div><!-- /.cta__icon -->
-              <div class="cta__content">
-                <h4 class="cta__title">Small/Growing Business!</h4>
-                <p class="cta__desc mb-0">Professional IT support packages tailored to align with your business
-                  objectives
-                  and meet your needs.</p>
-              </div><!-- /.cta__content -->
-            </div><!-- /.cta__item -->
-            <div class="or-seperator">or</div>
-            <div class="cta__item d-flex align-items-center">
-              <div class="cta__content text-right">
-                <h4 class="cta__title">Enterprise Level Organization</h4>
-                <p class="cta__desc mb-0">Professional IT support packages tailored to align with your business
-                  objectives and meet your needs.</p>
-              </div><!-- /.cta__content -->
-              <div class="cta__icon">
-                <i class="icon-developer"></i>
-              </div><!-- /.cta__icon -->
-            </div><!-- /.cta__item -->
-          </div><!-- /.cta -->
-          <p class="text__link text-center mt-40 mb-0">IT Management Solutions for your Business,
-            <a href="pricing.html" class="btn btn__link btn__secondary btn__icon px-0">
-              <span>Explore Our Plans</span> <i class="icon-arrow-right"></i>
-            </a>
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 hero-content">
+          <div class="eyebrow">
+            <i class="bi bi-buildings-fill"></i>
+            About Emergexians Infotech Private Limited
+          </div>
+          <h1 class="hero-title">Building <span>Digital Growth</span> Through Technology, Strategy, and Execution</h1>
+          <p class="hero-text">
+            Emergexians is a modern IT and digital solutions company focused on helping startups,
+            businesses, and enterprises build strong online presence, improve operations, and grow with
+            websites, mobile apps, custom software, e-commerce platforms, AI automation, and technical support.
           </p>
-        </div><!-- /.container -->
+
+          <div class="hero-actions">
+            <a href="request-quote.html" class="btn-main">Work With Us</a>
+            <a href="services.html" class="btn-outline-light-custom">Explore Services</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <h4>Digital</h4>
+              <p>Business Solutions</p>
+            </div>
+            <div class="hero-stat">
+              <h4>Modern</h4>
+              <p>Technology Approach</p>
+            </div>
+            <div class="hero-stat">
+              <h4>Growth</h4>
+              <p>Focused Execution</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 hero-visual">
+          <div class="glass-card">
+            <div class="glass-mini">
+              <i class="bi bi-globe2"></i>
+              <h5>Digital Presence</h5>
+              <p>We help brands build websites and platforms that look professional and perform with purpose.</p>
+            </div>
+            <div class="glass-mini">
+              <i class="bi bi-phone-vibrate-fill"></i>
+              <h5>Scalable Products</h5>
+              <p>From mobile apps to software systems, our solutions are designed for long-term business growth.</p>
+            </div>
+            <div class="glass-mini">
+              <i class="bi bi-gear-wide-connected"></i>
+              <h5>Business-Oriented Execution</h5>
+              <p>We combine development, strategy, automation, and support to solve real operational needs.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- /.testimonials -->
+    </div>
+  </section>
 
-    <!-- =========================
-       Banner layout 5
-      =========================== -->
-    <section class="banner-layout5 banner-layout5-sticky bg-parallax pt-130 pb-0">
-      <div class="bg-img"><img src="assets/images/banners/9.jpg" alt="background"></div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 d-flex flex-column justify-content-between pb-80">
-            <div class="heading heading-light mb-50 sticky-top">
-              <div class="divider divider-white"></div>
-              <h3 class="heading__title mb-30">Easy solutions for all difficult IT problems, keep business safe &
-                ensure high availability.
-              </h3>
-            </div><!-- /.heading -->
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="contact-info">
-                  <div class="contact__icon"><i class="icon-map-marker"></i></div>
-                  <ul class="contact__list list-unstyled">
-                    <li>Dwarka Sec - 14, Delhi, India.</li>
-                  </ul>
-                </div><!-- /.contact-item-->
-              </div><!-- /.col-sm-6 -->
-              <div class="col-sm-6">
-                <div class="contact-item">
-                  <div class="contact__icon"><i class="icon-mail"></i></div>
-                  <ul class="contact__list list-unstyled">
-                    <li><a href="mailto:info@emergexians.com">info@emergexians.com</a></li>
-                    <li><a href="tel:+918601530993">Phone: +91 8601530993</a></li>
-                  </ul>
-                </div><!-- /.contact-item-->
-              </div><!-- /.col-sm-6 -->
-              <div class="col-sm-6"></div><!-- /.col-sm-6 -->
-            </div><!-- /.row-->
-          </div><!-- /.col-xl-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 offset-xl-1">
-            <div class="banner__content">
-              <div class="bg-img"><img src="assets/images/backgrounds/3.png" alt="background"></div>
-              <div class="scroll__icon"><i class="icon-mouse"></i></div>
-              <div class="row heading heading-light">
-                <div class="col-sm-6">
-                  <h3 class="heading__title mb-30">450+ client’s interactions!</h3>
-                </div><!-- /.col-sm-6 -->
-                <div class="col-sm-6">
-                  <p class="heading__desc mb-20">Provide users with appropriate view access to requests, problems,
-                    changes, contracts & solutions with experienced professionals.</p>
-                  <p class="heading__desc mb-20">As one of the world's largest ITService Providers, we are ready to
-                    help.
-                  </p>
-                </div><!-- /.col-sm-6 -->
-              </div><!-- /.row -->
-              <div class="row counters-wrapper counters-light mt-70">
-                <!-- counter item #1 -->
-                <div class="col-sm-4">
-                  <div class="counter-item">
-                    <h4 class="counter">204</h4>
-                    <p class="counter__desc">Projects And Software Developed in 2021</p>
-                  </div><!-- /.counter-item -->
-                </div><!-- /.col-sm-4 -->
-                <!-- counter item #2 -->
-                <div class="col-sm-4">
-                  <div class="counter-item">
-                    <h4 class="counter">20</h4>
-                    <p class="counter__desc">Qualified Team, Interns And Developers With Us</p>
-                  </div><!-- /.counter-item -->
-                </div><!-- /.col-sm-4 -->
-                <!-- counter item #3 -->
-                <div class="col-sm-4">
-                  <div class="counter-item">
-                    <h4 class="counter">100</h4>
-                    <p class="counter__desc">Satisfied Clients We Have Served Globally</p>
-                  </div><!-- /.counter-item -->
-                </div><!-- /.col-sm-4 -->
-              </div><!-- /.row -->
-            </div><!-- /.banner__content -->
-            <div class="semi-banner bg-gray">
-              <div class="row row-no-gutter">
-                <div class="col-sm-6">
-                  <div class="semi-banner__content">
-                    <div class="heading">
-                      <h3 class="heading__title mb-30">Timely Service, and incident resolutions!!</h3>
-                      <p class="heading_desc mb-30">Improve efficiency, leverage tech, and provide better customer
-                        experiences with the modern technology services available allover the world. </p>
-                      <p class="heading_desc mb-30">Our skilled personnel, utilising the latest processing software,
-                        combined with decades of experience.</p>
-                    </div><!-- /.heading -->
-                    <img src="assets/images/about/singnture.png" alt="singnture">
-                  </div>
-                </div><!-- /.col-sm-6 -->
-                <div class="col-sm-6 d-none d-md-block">
-                  <img src="assets/images/banners/7.jpg" alt="banner" class="w-100">
-                </div><!-- /.col-sm-6 -->
-              </div><!-- /.row -->
-            </div><!-- /.semi-banner -->
-            <div class="semi-banner bg-gray">
-              <div class="row row-no-gutter">
-                <div class="col-sm-6">
-                  <div class="cta-banner bg-primary">
-                    <div class="cta__icon color-white"><i class="icon-developer"></i></div>
-                    <h4 class="cta__title color-white">Since 2024</h4>
-                    <p class="cta__desc color-white mb-25">Provide users with appropriate view and access to requests, problems, changes, contracts, solutions, and reports.</p>
-                  </div>
-                </div><!-- /.col-sm-6 -->
-                <div class="col-sm-6">
-                  <div class="semi-banner__content pb-0">
-                    <div class="heading">
-                      <h3 class="heading__title mb-30">We have decades of work experience!</h3>
-                    </div><!-- /.heading -->
-                    <h4 class="banner__subheading">Consulting & Insights</h4>
-                    <p class="heading_desc">Our objective insights steer you toward the right decisions on issues that
-                      matter.</p>
-                    <h4 class="banner__subheading">Research & Advisory</h4>
-                    <p class="heading_desc">Our combination of research, problem solving and hands-on experience.</p>
-                    <h4 class="banner__subheading">Strategic Advice</h4>
-                    <p class="heading_desc">Tools to help turn strategy into decisions, and execute for measurable
-                      results.</p>
-                  </div>
-                </div><!-- /.col-sm-6 -->
-              </div><!-- /.row -->
-            </div><!-- /.semi-banner -->
-            <section class="awards bg-secondary">
-              <div class="row heading heading-light mb-60">
-                <div class="col-sm-6">
-                  <h3 class="heading__title">Our Certifications and recognitions</h3>
-                </div><!-- /col-lg-5 -->
-                <div class="col-sm-6">
-                  <p class="heading__desc">Trusted by the world's best organizations, for 05+ years and running, it has
-                    been delivering smiles to hundreds of IT advisors, developers, users, and business owners.
-                  </p>
-                </div><!-- /.col-lg-5 -->
-              </div><!-- /.row -->
-              <div class="row awards-wrapper">
-                <div class="col-sm-12">
-                  <div class="awards-carousel-wrapper">
-                    <div class="slick-carousel"
-                      data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "arrows": false, "dots": true,"autoplay": true, "autoplaySpeed": 4000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 768, "settings": {"slidesToShow": 1}}, {"breakpoint": 570, "settings": {"slidesToShow": 1}}]}'>
-                      <!-- fancybox item #1 -->
-                      <div class="fancybox-item">
-                          <div class="fancybox__icon-img">
-                            <img src="assets/images/awards/icons/1.jpg" alt="icon">
-                          </div><!-- /.fancybox__icon-img -->
-                        <div class="fancybox__content">
-                          <h4 class="fancybox__title">Startup India Recognized</h4>
-                          <p class="fancybox__desc">Officially recognized under the Startup India initiative by the Government of India
-                          </p>
-                        </div><!-- /.fancybox-content -->
-                      </div><!-- /.fancybox-item -->
-                      <!-- fancybox item #2 -->
-                      <div class="fancybox-item">
-                          <div class="fancybox__icon-img">
-                            <img src="assets/images/awards/icons/2.jpg" alt="icon">
-                          </div><!-- /.fancybox__icon-img -->
-                        <div class="fancybox__content">
-                          <h4 class="fancybox__title">MSME Registered Company</h4>
-                          <p class="fancybox__desc">Registered under Micro, Small & Medium Enterprises (MSME), Government of India
-                          </p>
-                        </div><!-- /.fancybox-content -->
-                      </div><!-- /.fancybox-item -->
-                      <!-- fancybox item #3 -->
-                      <div class="fancybox-item">
-                          <div class="fancybox__icon-img">
-                            <img src="assets/images/awards/icons/3.jpg" alt="icon">
-                          </div><!-- /.fancybox__icon-img -->
-                        <div class="fancybox__content">
-                          <h4 class="fancybox__title">ISO 9001:2015 – Quality Management System</h4>
-                          <p class="fancybox__desc">Certified for maintaining high-quality standards in service delivery
-                          </p>
-                        </div><!-- /.fancybox-content -->
-                      </div><!-- /.fancybox-item -->
-                      <!-- fancybox item #4 -->
-                      <div class="fancybox-item">
-                          <div class="fancybox__icon-img">
-                            <img src="assets/images/awards/icons/4.jpg" alt="icon">
-                          </div><!-- /.fancybox__icon-img -->
-                        <div class="fancybox__content">
-                          <h4 class="fancybox__title">ISO/IEC 27001:2022 – Information Security Management</h4>
-                          <p class="fancybox__desc">Certified for data security and information protection standards
-                          </p>
-                        </div><!-- /.fancybox-content -->
-                      </div><!-- /.fancybox-item -->
-                    </div><!-- /.carousel  -->
-                  </div><!-- /.awards-carousel-wrapper -->
-                </div><!-- /.col-12 -->
-              </div><!-- /.row -->
-            </section>
-          </div><!-- /.col-xl-4 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Banner layout 5 -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="content-card">
+            <span class="badge-soft">Who We Are</span>
+            <h2 class="mb-3">A Technology Company Built for Modern Businesses</h2>
+            <p>
+              Emergexians Infotech Private Limited is a fast-growing company delivering professional
+              digital solutions across web, mobile, software, e-commerce, automation, and support.
+              We work with a practical, business-first mindset to ensure every solution creates real value,
+              whether the goal is online growth, internal efficiency, customer engagement, or digital transformation.
+            </p>
+            <ul>
+              <li>Website development for startups, brands, and corporate businesses</li>
+              <li>Mobile app development for Android, iOS, and hybrid platforms</li>
+              <li>Custom software solutions like CRM, ERP, dashboards, and portals</li>
+              <li>E-commerce systems, AI automation, and long-term technical maintenance</li>
+            </ul>
+          </div>
+        </div>
 
-    <!-- ======================
-      Blog Grid
-    ========================= -->
-    <section class="blog-grid pb-50">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading text-center mb-40">
-              <h2 class="heading__subtitle">Recent Blogs</h2>
-              <h3 class="heading__title">Resource Library</h3>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <!-- Blog Item #1 -->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog/Top-Website-Development-Company-in-Delhi,-Lucknow-&-India.html">
-                  <img src="assets/images/blog/single/1.png" alt="Top Website Development Company in Delhi, Lucknow & India">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post__content">
-                <div class="post__meta d-flex flex-wrap">
-                  <span class="post__meta-date">March 23, 2026</span>
-                </div>
-                <h4 class="post__title"><a href="blog/Top-Website-Development-Company-in-Delhi,-Lucknow-&-India.html">Top Website Development Company in Delhi, Lucknow & India</a>
-                </h4>
-                <p class="post__desc">Businesses today need more than a basic website. They need performance, user experience, SEO readiness, and scalable digital infrastructure. This guide explains...
-                </p>
-                <a href="blog/Top-Website-Development-Company-in-Delhi,-Lucknow-&-India.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Blog Item #2 -->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog/Best-CRM-Software-for-Real-Estate-in-India.html">
-                  <img src="assets/images/blog/single/3.png" alt="Best CRM Software for Real Estate in India">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post__content">
-                <div class="post__meta d-flex flex-wrap">
-                  <span class="post__meta-date">March 23, 2026</span>
-                </div>
-                <h4 class="post__title"><a href="blog/Best-CRM-Software-for-Real-Estate-in-India.html">Best CRM Software for Real Estate in India</a>
-                </h4>
-                <p class="post__desc">Real estate businesses today need more than spreadsheets and manual follow-ups. This guide explains how a modern CRM helps manage leads, automate workflows...
-                </p>
-                <a href="blog/Best-CRM-Software-for-Real-Estate-in-India.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- Blog Item #3 -->
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="blog/Top-SaaS-Development-Company-in-India.html">
-                  <img src="assets/images/blog/single/2.png" alt="Top SaaS Development Company in India">
-                </a>
-              </div><!-- /.blog-img -->
-              <div class="post__content">
-                <div class="post__meta d-flex flex-wrap">
-                  <span class="post__meta-date">March 23, 2026</span>
-                </div>
-                <h4 class="post__title"><a href="blog/Top-SaaS-Development-Company-in-India.html">Top SaaS Development Company in India</a>
-                </h4>
-                <p class="post__desc">SaaS is transforming how modern businesses operate. From subscription platforms to automation dashboards and cloud-based systems, this guide explains why...
-                </p>
-                <a href="blog/Top-SaaS-Development-Company-in-India.html" class="btn btn__secondary btn__link">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.blog-content -->
-            </div><!-- /.post-item -->
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.blog Grid -->
+        <div class="col-lg-6">
+          <div class="content-card">
+            <span class="badge-soft">What We Believe</span>
+            <h2 class="mb-3">Technology Should Be Practical, Scalable, and Growth-Focused</h2>
+            <p>
+              We believe digital solutions should do more than just look impressive. They should improve
+              how a business works, communicate, sells, manages, and grows. Our focus is not only on design
+              and development quality but also on usability, system clarity, performance, and long-term scalability.
+            </p>
+            <ul>
+              <li>Business goals should guide digital execution</li>
+              <li>User experience should be smooth and meaningful</li>
+              <li>Technology should support speed, efficiency, and trust</li>
+              <li>Execution should be structured, transparent, and consistent</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="story-card">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge-soft">Founder Story</span>
+            <h2 class="mb-3">The Vision Behind Emergexians</h2>
+            <p>
+              Emergexians was built with the vision of creating a company that helps businesses adapt,
+              compete, and grow in the digital era through reliable execution and modern technology.
+              The idea was not just to build projects, but to create meaningful solutions that strengthen
+              business identity, simplify processes, and support long-term expansion.
+            </p>
+            <p class="mt-3">
+              Under the leadership of <strong>Aashish Kumar</strong>, Emergexians focuses on combining
+              innovation, business understanding, and execution discipline to serve startups, SMEs, and
+              enterprises with practical digital transformation.
+            </p>
+
+            <div class="founder-quote">
+              “Our goal is to build a company where technology is used not only to create products,
+              but to create progress for businesses.”
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="content-card h-100">
+              <span class="badge-soft">Leadership Focus</span>
+              <h3 class="mb-3">Built on Vision, Quality, and Growth</h3>
+              <p>
+                The leadership approach at Emergexians is centered around responsibility, modern execution,
+                process clarity, and long-term value creation. Every project is approached with the idea that
+                strong digital systems can directly improve business outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our Mission, Vision, and Values</h2>
+        <p class="section-subtitle">
+          These principles define how Emergexians builds digital solutions and grows with businesses.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-4">
+          <div class="value-card">
+            <div class="icon-box"><i class="bi bi-bullseye"></i></div>
+            <h4>Our Mission</h4>
+            <p>
+              To empower businesses with digital solutions that improve efficiency, strengthen online presence,
+              and support sustainable growth through technology and execution excellence.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="value-card">
+            <div class="icon-box"><i class="bi bi-eye-fill"></i></div>
+            <h4>Our Vision</h4>
+            <p>
+              To become a trusted digital transformation partner known for delivering innovative, scalable,
+              and business-oriented solutions across industries and markets.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="value-card">
+            <div class="icon-box"><i class="bi bi-gem"></i></div>
+            <h4>Our Values</h4>
+            <p>
+              Quality, discipline, innovation, collaboration, responsibility, and growth-driven thinking
+              guide every project and client relationship at Emergexians.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Emergexians in Numbers</h2>
+        <p class="section-subtitle">
+          Add your real business statistics here to create stronger trust and conversion.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Business Clients</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Service Categories</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Growth-Oriented Approach</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our Core Services</h2>
+        <p class="section-subtitle">
+          Emergexians delivers a complete range of digital services for businesses that want to build, automate, and grow.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="bi bi-globe2"></i></div>
+            <h4>Website Development</h4>
+            <p>
+              Business websites, corporate websites, landing pages, portfolio websites, and responsive web experiences built for trust and conversion.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="bi bi-phone-fill"></i></div>
+            <h4>Mobile App Development</h4>
+            <p>
+              Android, iOS, and hybrid mobile app solutions designed to improve engagement, accessibility, and business convenience.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="bi bi-window-stack"></i></div>
+            <h4>Custom Software Development</h4>
+            <p>
+              CRM systems, dashboards, admin panels, ERP platforms, portals, and business automation tools tailored to workflow needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="bi bi-cart-check-fill"></i></div>
+            <h4>E-Commerce Solutions</h4>
+            <p>
+              Online stores, marketplace systems, payment integration, and commerce platforms designed for better shopping and sales growth.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="bi bi-cpu-fill"></i></div>
+            <h4>AI & Automation Solutions</h4>
+            <p>
+              Chatbots, workflow automation, smart integrations, and business efficiency systems that reduce manual effort and improve process speed.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4">
+          <div class="service-card">
+            <div class="icon-box"><i class="bi bi-headset"></i></div>
+            <h4>Technical Support & Maintenance</h4>
+            <p>
+              Bug fixes, updates, monitoring, performance optimization, security improvements, and long-term support for digital systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Why Businesses Choose Emergexians</h2>
+        <p class="section-subtitle">
+          We combine strong execution, modern technology, and business understanding to create digital solutions that work in the real world.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3">
+          <div class="why-card">
+            <div class="icon-box"><i class="bi bi-lightning-charge-fill"></i></div>
+            <h5>Modern Execution</h5>
+            <p>
+              We deliver current, scalable, and practical digital solutions built with a modern technology mindset.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="why-card">
+            <div class="icon-box"><i class="bi bi-briefcase-fill"></i></div>
+            <h5>Business-Centric Thinking</h5>
+            <p>
+              Our solutions are planned around actual business goals, not just visual design or technical features.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="why-card">
+            <div class="icon-box"><i class="bi bi-award-fill"></i></div>
+            <h5>Quality & Reliability</h5>
+            <p>
+              We focus on consistency, structured delivery, performance, and dependable post-project support.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-3">
+          <div class="why-card">
+            <div class="icon-box"><i class="bi bi-graph-up-arrow"></i></div>
+            <h5>Growth Orientation</h5>
+            <p>
+              Everything we build is aligned to support better visibility, operations, customer experience, and long-term business growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding pt-0">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Let’s Build Something Meaningful Together</h2>
+        <p>
+          Whether you need a business website, mobile application, custom software, e-commerce platform,
+          automation system, or technical support, Emergexians is ready to help you move forward with confidence.
+        </p>
+        <div class="cta-actions">
+          <a href="contact-us.html" class="btn-cta-light">Contact Us</a>
+          <a href="services.html" class="btn-cta-outline">View Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
       <!-- Footer Start -->
   <footer class="emx-footer">
     <div class="container">
